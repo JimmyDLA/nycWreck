@@ -3,39 +3,105 @@
 body{
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 header{
   width: 100vw;
-  height: 5vh;
+  height: 10vh;
   background-color: gray;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .logo{
   width: 10vw;
-  height: 5vh;
+  height: 10vh;
   background-color: lightgray;
 }
 
 ul{
   width: 40vw;
-  
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
 }
 
+li{
+  height: 10vh;
+  width: 9vw;
+  background-color: lightgray;
+  list-style: none;
+  border: 2px solid black;
+}
+
+.containerInfo{
+  height: 25vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  background-color: darkgray;
+}
+
+.phoneNums{
+  height: 25vh;
+  width: 25vw;
+  background-color: darkgray;
+}
+
+.containerTitle{
+  height: 25vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgray;
+}
+
+.socialNet{
+  width: 25vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+}
+
+span{
+  height: 50px;
+  width: 50px;
+  background-color: lightblue;
+}
+
+.address{
+  height: 25vh;
+  width: 25vw;
+  background-color: darkgray;
+}
 
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  /*max-width: 1000px;*/
   position: relative;
-  margin: auto;
+  margin: 0;
+  width: 100vw;
+  height: 60vh;
 }
 
 .mySlides {
     display: none;
+    height: 60vh;
+    width: 100vw;
+}
+img{
+  height: 60vh;
+  width: 100vw;
 }
 
 /* Next & previous buttons */
@@ -51,6 +117,7 @@ ul{
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+  background-color: rgba(50, 50, 50, 0.7);
 }
 
 /* Position the "next button" to the right */
