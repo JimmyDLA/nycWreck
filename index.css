@@ -8,22 +8,32 @@ body{
 
 header{
   width: 100vw;
-  height: 10vh;
-  background-color: gray;
+  height: 7vh;
+  /*background-color: rgb(30, 30, 30);*/
+  background: linear-gradient(to bottom right, black, rgb(100,100,100)); /* Standard syntax */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.35);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.35);
+  box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.35);
+  z-index: 1;
 }
 
 .logo{
   width: 10vw;
-  height: 10vh;
-  background-color: lightgray;
+  height: 7vh;
+  color: lightgray;
+}
+
+.miniLogo{
+  width: 15vw;
+  height: 7vh;
 }
 
 ul{
   width: 40vw;
-  height: 10vh;
+  height: 7vh;
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -33,42 +43,40 @@ ul{
 }
 
 li{
-  height: 10vh;
+  height: 7vh;
   width: 9vw;
-  background-color: lightgray;
+  color: lightgray;
   list-style: none;
   border: 2px solid black;
 }
 
 .containerInfo{
-  height: 25vh;
+  height: 28vh;
   width: 100vw;
   display: flex;
   flex-direction: row;
-  background-color: darkgray;
+  /*background-color: rgb(200, 200, 200);*/
+  background-image: url("./public/whiteBackground2.jpg");
 }
 
 .phoneNums{
-  height: 25vh;
+  height: 28vh;
   width: 25vw;
-  background-color: darkgray;
 }
 
 .containerTitle{
-  height: 25vh;
+  height: 28vh;
   width: 50vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: lightgray;
 }
 
 .socialNet{
   width: 25vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  background-color: white;
+  justify-content: space-around;
 }
 
 span{
@@ -78,20 +86,30 @@ span{
 }
 
 .address{
-  height: 25vh;
+  height: 28vh;
   width: 25vw;
-  background-color: darkgray;
+}
+
+.mainLogo{
+  width: 50vw;
+  height: 28vh;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.35);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.35);
+  box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.35);
+  z-index: 2;
 }
 
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-  /*max-width: 1000px;*/
   position: relative;
   margin: 0;
   width: 100vw;
   height: 60vh;
+  -webkit-box-shadow: 7px -7px 5px 0px rgba(0,0,0,0.35);
+  -moz-box-shadow: 7px -7px 5px 0px rgba(0,0,0,0.35);
+  box-shadow: 7px -7px 5px 0px rgba(0,0,0,0.35);
 }
 
 .mySlides {
@@ -99,7 +117,7 @@ span{
     height: 60vh;
     width: 100vw;
 }
-img{
+.slideImg{
   height: 60vh;
   width: 100vw;
 }
