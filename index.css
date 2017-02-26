@@ -55,6 +55,7 @@ li{
   flex-direction: row;
   /*background-color: rgb(200, 200, 200);*/
   background-image: url("./public/whiteMetal.jpg");
+  background-size: cover;
 }
 
 .phoneNums{
