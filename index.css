@@ -10,12 +10,13 @@ header{
   width: 100vw;
   height: 7vh;
   /*background-color: rgb(55, 55, 55);*/
-  /*background: linear-gradient(to bottom left, black, rgb(100,100,100)); /* Standard syntax */*/
+  /*background: linear-gradient(to bottom left, black, rgb(100,100,100)); /* Standard syntax */
   z-index: 1;
 }
 
 .headerContainer{
-background: linear-gradient(135deg, rgb(200,200,200) 0%,rgb(150,150,150) 17%,rgb(100,100,100) 40%,rgb(55,55,55) 63%,rgb(2,2,2) 100%);}
+background: linear-gradient(135deg, rgb(200,200,200) 0%,rgb(150,150,150) 17%,rgb(100,100,100) 40%,rgb(55,55,55) 63%,rgb(2,2,2) 100%);
+}
 
 .logo{
   width: 250px;
