@@ -9,13 +9,20 @@ body{
 header{
   width: 100vw;
   height: 7vh;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
   /*background-color: rgb(55, 55, 55);*/
   /*background: linear-gradient(to bottom left, black, rgb(100,100,100)); /* Standard syntax */
-  z-index: 1;
 }
 
 .headerContainer{
 background: linear-gradient(135deg, rgb(200,200,200) 0%,rgb(150,150,150) 17%,rgb(100,100,100) 40%,rgb(55,55,55) 63%,rgb(2,2,2) 100%);
+}
+
+.miniLogo{
+  width: 250px;
+  height: 50px;
 }
 
 .logo{
@@ -23,10 +30,6 @@ background: linear-gradient(135deg, rgb(200,200,200) 0%,rgb(150,150,150) 17%,rgb
   height: 50px;
   color: lightgray;
   display: inline-block;
-}
-
-.miniLogo{
-  width: 25vw;
 }
 
 ul{
@@ -38,6 +41,7 @@ ul{
   margin: 0;
   padding: 0;
   color: lightgray;
+
 }
 
 li{
@@ -47,6 +51,12 @@ li{
   list-style: none;
   border: 2px solid black;
   float: right;
+
+}
+li:hover{
+  background-color: rgb(205, 0, 0);
+  color: black;
+
 }
 
 .containerInfo{
@@ -55,6 +65,7 @@ li{
   width: 100vw;
   display: flex;
   flex-direction: row;
+  margin-top: 50px;
   /*background: linear-gradient(to bottom right, black, white); /* Standard syntax (must be last) */*/
   /*background-color: rgb(55, 55, 55);*/
   /*background: linear-gradient(to bottom left, black, rgb(100,100,100)); /* Standard syntax */
@@ -91,12 +102,13 @@ span{
 .address{
   height: 28vh;
   width: 25vw;
-}
+  }
 
 .mainLogo{
   width: 640px;
   height: 240px;
   margin-top: -40px;
+
 }
 
 * {box-sizing:border-box}
