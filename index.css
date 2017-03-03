@@ -9,9 +9,11 @@ body{
 header{
   width: 100vw;
   height: 7vh;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
   /*background-color: rgb(55, 55, 55);*/
   /*background: linear-gradient(to bottom left, black, rgb(100,100,100)); /* Standard syntax */
-
 }
 
 .headerContainer{
@@ -63,7 +65,7 @@ li:hover{
   width: 100vw;
   display: flex;
   flex-direction: row;
-  z-index: 0;
+  margin-top: 50px;
   /*background: linear-gradient(to bottom right, black, white); /* Standard syntax (must be last) */*/
   /*background-color: rgb(55, 55, 55);*/
   /*background: linear-gradient(to bottom left, black, rgb(100,100,100)); /* Standard syntax */
