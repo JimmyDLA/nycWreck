@@ -17,7 +17,8 @@ header{
 }
 
 .headerContainer{
-background: linear-gradient(135deg, rgb(200,200,200) 0%,rgb(150,150,150) 17%,rgb(100,100,100) 40%,rgb(55,55,55) 63%,rgb(2,2,2) 100%);
+  background-color: rgb(255, 255, 255);
+/*background: linear-gradient(135deg, rgb(200,200,200) 0%,rgb(150,150,150) 17%,rgb(100,100,100) 40%,rgb(55,55,55) 63%,rgb(2,2,2) 100%);*/
 }
 
 .miniLogo{
@@ -28,7 +29,6 @@ background: linear-gradient(135deg, rgb(200,200,200) 0%,rgb(150,150,150) 17%,rgb
 .logo{
   width: 250px;
   height: 50px;
-  color: lightgray;
   display: inline-block;
 }
 
@@ -60,7 +60,6 @@ li:hover{
 }
 
 .containerInfo{
-  color: white;
   height: 28vh;
   width: 100vw;
   display: flex;
@@ -195,6 +194,17 @@ span{
 
 .active, .dot:hover {
   background-color: #717171;
+}
+
+.whiteSpace{
+  width: 100vw;
+  height: 200px;
+}
+.offWhiteSpace{
+  width: 100vw;
+  height: 700px;
+  background-color: rgb(246, 246, 246);
+  margin-top: -50px;
 }
 
 /* Fading animation */
