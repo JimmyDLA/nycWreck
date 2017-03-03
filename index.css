@@ -18,15 +18,16 @@ header{
 background: linear-gradient(135deg, rgb(200,200,200) 0%,rgb(150,150,150) 17%,rgb(100,100,100) 40%,rgb(55,55,55) 63%,rgb(2,2,2) 100%);
 }
 
+.miniLogo{
+  width: 250px;
+  height: 50px;
+}
+
 .logo{
   width: 250px;
   height: 50px;
   color: lightgray;
   display: inline-block;
-}
-
-.miniLogo{
-  width: 25vw;
 }
 
 ul{
