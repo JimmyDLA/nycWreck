@@ -9,21 +9,20 @@ body{
 header{
   width: 100vw;
   height: 7vh;
-  /*background-color: rgb(30, 30, 30);*/
-  background: linear-gradient(to bottom left, black, rgb(100,100,100)); /* Standard syntax */
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  -webkit-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.35);
-  -moz-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.35);
-  box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.35);
+  /*background-color: rgb(55, 55, 55);*/
+  /*background: linear-gradient(to bottom left, black, rgb(100,100,100)); /* Standard syntax */
   z-index: 1;
 }
 
+.headerContainer{
+background: linear-gradient(135deg, rgb(200,200,200) 0%,rgb(150,150,150) 17%,rgb(100,100,100) 40%,rgb(55,55,55) 63%,rgb(2,2,2) 100%);
+}
+
 .logo{
-  width: 25vw;
-  height: 7vh;
+  width: 250px;
+  height: 50px;
   color: lightgray;
+  display: inline-block;
 }
 
 .miniLogo{
@@ -31,31 +30,36 @@ header{
 }
 
 ul{
-  width: 40vw;
+  width: 45vw;
   height: 7vh;
-  display: flex;
-  flex-direction: row;
+  display: inline-block;
+  float: right;
   list-style: none;
   margin: 0;
   padding: 0;
+  color: lightgray;
 }
 
 li{
-  height: 7vh;
-  width: 9vw;
-  color: lightgray;
+  display: inline-block;
+  height: 50px;
+  width: 110px;
   list-style: none;
   border: 2px solid black;
+  float: right;
 }
 
 .containerInfo{
+  color: white;
   height: 28vh;
   width: 100vw;
   display: flex;
   flex-direction: row;
-  /*background-color: rgb(200, 200, 200);*/
-  background-image: url("./public/whiteMetal.jpg");
-  background-size: cover;
+  /*background: linear-gradient(to bottom right, black, white); /* Standard syntax (must be last) */*/
+  /*background-color: rgb(55, 55, 55);*/
+  /*background: linear-gradient(to bottom left, black, rgb(100,100,100)); /* Standard syntax */
+  /*background-image: url("./public/whiteMetal.jpg");*/
+  /*background-size: cover;*/
 }
 
 .phoneNums{
@@ -90,8 +94,9 @@ span{
 }
 
 .mainLogo{
-  width: 50vw;
-  height: 28vh;
+  width: 640px;
+  height: 240px;
+  margin-top: -40px;
 }
 
 * {box-sizing:border-box}
