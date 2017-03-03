@@ -193,6 +193,57 @@ span{
   background-color: rgb(240, 240, 240);
 }
 
+.row1{
+  width: 100vw;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+
+
+}
+
+.row1left{
+  height: 400px;
+  width: 47vw;
+  background-color: rgb(180, 0, 36);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+
+#objImg{
+  height: 300px;
+  width: 500px;
+}
+
+.row1right{
+  height: 400px;
+  width: 47vw;
+  background-color: rgb(180, 0, 36);
+  display: flex;
+  margin-top: 30px;
+}
+
+#workTech{
+  margin-top: -60px;
+  height: 300px;
+  width: 500px;
+  background:
+    linear-gradient(
+      rgba(250, 250, 250, 0.6),
+      rgba(250, 250, 250, 0.6)
+    ),
+    url(./public/workTech.jpg);
+  background-size: cover;
+  align-self: center;
+}
+
+
+
 .redSpace{
   width: 100vw;
   height: 300px;
