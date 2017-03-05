@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", function(){
   console.log("JS is running");
 
   var slideIndex = 1;
@@ -27,4 +26,3 @@ document.addEventListener("DOMContentLoaded", function(){
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
   }
-}
