@@ -1,4 +1,7 @@
+html{
+  font-family: 'Nunito', sans-serif;
 
+}
 
 body{
   display: flex;
@@ -34,6 +37,8 @@ background: linear-gradient(135deg, rgb(200,200,200) 0%,rgb(150,150,150) 17%,rgb
   color: rgba(245, 245, 245, 1);
   font-size: 30px;
   line-height: 50px;
+  font-family: 'Abril Fatface', cursive;
+
 }
 
 ul{
@@ -56,6 +61,8 @@ li{
   float: right;
   text-align: center;
   line-height: 50px;
+  font-family: 'Acme', sans-serif;
+
 }
 li:hover{
   background-color: rgb(245, 245, 245);
@@ -64,14 +71,15 @@ li:hover{
 }
 
 .containerInfo{
-  height: 220px;
+  height: 240px;
   width: 100vw;
   display: flex;
   flex-direction: row;
   margin-top: 50px;
   color: white;
+  background-color: rgb(55, 55, 55);
+  /*background: linear-gradient(135deg, rgb(200,200,200) 0%,rgb(150,150,150) 17%,rgb(100,100,100) 40%,rgb(55,55,55) 63%,rgb(2,2,2) 100%);*/
   /*background: linear-gradient(to bottom right, black, white); /* Standard syntax (must be last) */*/
-  /*background-color: rgb(55, 55, 55);*/
   /*background: linear-gradient(to bottom left, black, rgb(100,100,100)); /* Standard syntax */
   /*background-image: url("./public/whiteMetal.jpg");*/
   /*background-size: cover;*/
@@ -100,7 +108,21 @@ li:hover{
 span{
   height: 50px;
   width: 50px;
-  background-color: lightblue;
+}
+
+#fb{
+  background-image: url("./public/facebookLogo.png");
+  background-size: cover;
+}
+
+#ig{
+  background-image: url("./public/instagramLogo.png");
+  background-size: cover;
+}
+
+#tw{
+  background-image: url("./public/twitterLogo.png");
+  background-size: cover;
 }
 
 .address{
