@@ -31,6 +31,9 @@ background: linear-gradient(135deg, rgb(200,200,200) 0%,rgb(150,150,150) 17%,rgb
   width: 250px;
   height: 50px;
   display: inline-block;
+  color: rgba(245, 245, 245, 1);
+  font-size: 30px;
+  line-height: 50px;
 }
 
 ul{
@@ -51,11 +54,12 @@ li{
   width: 110px;
   list-style: none;
   float: right;
-
+  text-align: center;
+  line-height: 50px;
 }
 li:hover{
   background-color: rgb(245, 245, 245);
-  color: black;
+  color: rgba(225, 38, 43, 1);
 
 }
 
