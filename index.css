@@ -31,14 +31,14 @@ background: linear-gradient(135deg, rgb(200,200,200) 0%,rgb(150,150,150) 17%,rgb
 }
 
 .logo{
-  width: 250px;
+  width: 400px;
   height: 50px;
   display: inline-block;
   color: rgba(245, 245, 245, 1);
   font-size: 30px;
   line-height: 50px;
   font-family: 'Abril Fatface', cursive;
-
+  padding-left: 20px;
 }
 
 ul{
@@ -46,11 +46,9 @@ ul{
   height: 50px;
   display: inline-block;
   float: right;
-  list-style: none;
-  margin: 0;
-  padding: 0;
   color: rgb(245, 245, 245);
-
+  margin: 0;
+  padding-right: 30px
 }
 
 li{
@@ -60,9 +58,8 @@ li{
   list-style: none;
   float: right;
   text-align: center;
-  line-height: 50px;
   font-family: 'Acme', sans-serif;
-
+  line-height: 50px;
 }
 li:hover{
   background-color: rgb(245, 245, 245);
@@ -88,6 +85,7 @@ li:hover{
 .phoneNums{
   height: 220px;
   width: 25vw;
+  text-align: center;
 }
 
 .containerTitle{
@@ -105,35 +103,42 @@ li:hover{
   justify-content: space-around;
 }
 
-span{
-  height: 50px;
-  width: 50px;
-}
 
 #fb{
   background-image: url("./public/facebookLogo.png");
   background-size: cover;
+  height: 40px;
+  width: 40px;
 }
 
 #ig{
   background-image: url("./public/instagramLogo.png");
   background-size: cover;
+  height: 40px;
+  width: 40px;
 }
 
 #tw{
   background-image: url("./public/twitterLogo.png");
   background-size: cover;
+  height: 40px;
+  width: 40px;
 }
 
 .address{
   height: 220px;
   width: 25vw;
-  }
+  text-align: center;
+/*line-height: 50px;*/
+}
 
 .mainLogo{
   width: 640px;
   height: 220px;
+}
 
+.mapIt{
+  color: rgb(38, 225, 123);
 }
 
 * {box-sizing:border-box}
@@ -215,7 +220,7 @@ span{
 .about{
   width: 100vw;
   height: 1100px;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(245, 245, 245);
 }
 
 .row1{
@@ -299,9 +304,47 @@ span{
 .services{
   width: 100vw;
   height: 1000px;
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(237, 237, 237);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
+.serviceImg{
+  height: 800px;
+  width: 750px;
+  background-color: lightgray;
+}
+
+.brainContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.threes{
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+
+#carIcon{
+  background-image: url("./public/carIcon.png");
+  background-size: cover;
+  width: 350px;
+
+}
+
+.serviceInfo{
+  height: 800px;
+  width: 500px;
+  background-color: white;
+  text-align: center;
+}
 
 
 /* Fading animation */
