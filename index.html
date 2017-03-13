@@ -25,10 +25,9 @@
       <!-- MAIN PAGE -->
     <div class="containerInfo">
       <div class="phoneNums">
-        <h2>
-          <u>CALL US</u> <br><br>
+        <h2>CALL US <br> <br>
+
           Erik: (917)374-6168 <br>
-          OR <br>
           Wilson: (917)859-0239 <br>
         </h2>
       </div>
@@ -66,14 +65,14 @@
       <div class="mySlides fade">
         <img class="slideImg" src="./public/bmw.jpg">
       </div>
-
+<!--
       <div class="mySlides fade">
         <img class="slideImg" src="./public/hemi.jpg">
       </div>
 
       <div class="mySlides fade">
         <img class="slideImg" src="./public/ferrari2.jpg">
-      </div>
+      </div> -->
 
       <div class="mySlides fade">
         <img class="slideImg" src="./public/frontBusiness2.jpg">
@@ -89,8 +88,8 @@
       <span class="dot" onclick="currentSlide(2)"></span>
       <span class="dot" onclick="currentSlide(3)"></span>
       <span class="dot" onclick="currentSlide(4)"></span>
-      <span class="dot" onclick="currentSlide(5)"></span>
-      <span class="dot" onclick="currentSlide(6)"></span>
+      <!-- <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span> -->
     </div>
 
                 <!--ABOUT PAGE -->
@@ -120,7 +119,7 @@
         </div>
 
         <div class="row2right">
-          <h1>About Us</h1>
+          <h1 class="lowerMargin">About Us</h1>
           <p>
             For most people, auto repairs is not fun or convenient.
             So, we want make the process as easy and enjoyable as possible
@@ -130,7 +129,7 @@
             needs.
           </p>
 
-          <h2>Our Objective</h2>
+          <h2 class="lowerMargin">Our Objective</h2>
           <p>
             <b> Maintaining your business</b><br>
             We have been striving to provide our clients the best
@@ -208,14 +207,52 @@
           </p>
         </div>
       </div>
-
     </div>
 
 
               <!-- CONTACT PAGE -->
     <div class="contact">
+      <div class="mainContact">
+        <div class="payment">
+          <h1>We Accept All Major Credit Card</h1>
+          <img id="cc"src="./public/creditCards.png" alt="credit cards">
+        </div>
 
+        <div class="numbers">
+          <img class="icon" src="./public/phoneIcon.png" alt="phone icon">
+          <p>(917)374-6168</p>
+          <img class="icon" src="./public/phoneIcon.png" alt="phone icon">
+          <p>(917)859-0239</p>
+          <img class="icon" id="mail" src="./public/mailIcon.png" alt="mail icon">
+          <p>nycwreckamended@gmail.com</p>
+        </div>
+
+        <div class="hours">
+          <h1>HOURS</h1>
+          <p>
+            24 HOUR EMERGENCY TOWING <br>
+            Monday - Friday: 9:00am - 6:00pm <br>
+            Saturday: 8:30am - 6:00pm <br>
+            Sundays: 11:00am - 4:00pm  <br>
+          </p>
+        </div>
+      </div>
+
+      <div class="map">
+        COME VISIT US:
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12099.052963468566!2d-73.7894714!3d40.7012117!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x36f863788c7108a9!2sNYC+WRECK-A-MENDED+COLLISION+CORP!5e0!3m2!1sen!2sus!4v1489384574599" width="100%" height="370" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
     </div>
+
+
+            <!-- PAGE FOOTER -->
+    <footer>
+      <p>
+        © 2017 NYC WRECK-A-MENDED COLLISION CORP | All Rights Reserved <br>
+        1104-15 Merrick Blvd Jamaica NY, 11433  <br>
+        Phone: (917)374-6168 | 917)859-0239
+      </p>
+    </footer>
   </body>
   <script src="app.js" charset="utf-8"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" charset="utf-8"></script>
