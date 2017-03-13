@@ -9,16 +9,16 @@
 
   <body>
     <header>
-      <div class="logo">
+      <div onclick="scrollTops()"class="logo">
         <!-- NYC Wreck-A-Mended -->
         <img id="miniLogo" src="./public/miniLogo.png" alt="logo">
       </div>
 
       <ul>
-        <li>CONTACT US</li>
-        <li>REFERRALS</li>
-        <li>SERVICES</li>
-        <li>ABOUT US</li>
+        <li onclick="scrollCont()">CONTACT US</li>
+        <li onclick="scrollRef()">REFERRALS</li>
+        <li onclick="scrollServ()">SERVICES</li>
+        <li onclick="scrollAbout()">ABOUT US</li>
       </ul>
     </header>
 
@@ -42,7 +42,7 @@
         <h2>
           104-15 Merrick Blvd <br>
           Jamaica NY, 11433 <br>
-          <a class="mapIt" href="#">Map it</a>
+          <a onclick="scrollMap()" class="mapIt" href="#">Map it</a>
         </h2><br>
 
         <div class="socialNet">
@@ -214,7 +214,7 @@
     <div class="contact">
       <div class="mainContact">
         <div class="payment">
-          <h1>We Accept All Major Credit Card</h1>
+          <h1>We Accept All Major Credit Cards</h1>
           <img id="cc"src="./public/creditCards.png" alt="credit cards">
         </div>
 
