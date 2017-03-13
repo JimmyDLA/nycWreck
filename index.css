@@ -538,9 +538,12 @@ margin-right: 150px;
 }
 
 .map{
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
   position: absolute;
   bottom: 1px;
-  width: 100%;
+  width: 50%;
   font-size: 50px;
   font-weight:900;
 }
