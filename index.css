@@ -12,7 +12,7 @@ p{
   font-weight: bolder;
 }
 header{
-  width: 100vw;
+  width: 100%;
   height: 50px;
   position: fixed;
   z-index: 1;
@@ -76,7 +76,7 @@ li:hover{
   flex-direction: row;
   margin-top: 50px;
   color: white;
-  background-color: rgb(55, 55, 55);
+  background-color: rgb(40, 40, 40);
   /*background: linear-gradient(135deg, rgb(200,200,200) 0%,rgb(150,150,150) 17%,rgb(100,100,100) 40%,rgb(55,55,55) 63%,rgb(2,2,2) 100%);*/
   /*background: linear-gradient(to bottom right, black, white); /* Standard syntax (must be last) */*/
   /*background: linear-gradient(to bottom left, black, rgb(100,100,100)); /* Standard syntax */
@@ -86,16 +86,17 @@ li:hover{
 
 .phoneNums{
   height: 220px;
-  width: 25vw;
+  width: 25%;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .containerTitle{
   height: 200px;
-  width: 50vw;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -133,7 +134,7 @@ li:hover{
 
 .address{
   height: 220px;
-  width: 25vw;
+  width: 25%;
   text-align: center;
 /*line-height: 50px;*/
 }
@@ -153,7 +154,7 @@ li:hover{
 .slideshow-container {
   position: relative;
   margin: 0;
-  width: 100vw;
+  width: 100%;
   height: 400px;
   box-shadow: 0px 2px 16px 9px rgba(64,64,64,1);
 
@@ -161,12 +162,12 @@ li:hover{
 
 .mySlides {
     display: none;
-    width: 100vw;
+    width: 100%;
     height: 400px;
 
 }
 .slideImg{
-  width: 100vw;
+  width: 100%;
   height: 400px;
 }
 
@@ -218,16 +219,15 @@ li:hover{
   height: 100px;
 }
 
-.whiteSpace{
-  width: 100vw;
-  height: 200px;
-  background: linear-gradient(135deg, rgb(200,200,200) 0%,rgb(150,150,150) 17%,rgb(100,100,100) 40%,rgb(55,55,55) 63%,rgb(2,2,2) 100%);
-
-}
 .about{
   width: 100vw;
   height: 1100px;
   background-color: rgb(250, 250, 250);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("./public/gtr.jpg");
+  background-repeat: no-repeat;
 }
 
 .row1{
@@ -243,7 +243,7 @@ li:hover{
 .row1left{
   height: 400px;
   width: 47vw;
-  background-color: rgba(200, 38, 43, 1);
+  background-color: rgba(200, 38, 43, 0.9);
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -260,7 +260,7 @@ li:hover{
 .row1right{
   height: 400px;
   width: 47vw;
-  background-color: rgba(200, 38, 43, 1);
+  background-color: rgba(200, 38, 43, 0.9);
   display: flex;
   margin-top: 30px;
   box-shadow: 0px 0px 50px -6px rgba(0,0,0,0.75);
@@ -300,12 +300,21 @@ li:hover{
   background-image: url(https://ksa.motory.com/tinymce/New%20Folder/mechanic-working-on-car.jpg);
   background-size: cover;
   box-shadow: 0px 2px 47px 8px rgba(64,63,64,1);
+}
 
+.lowerMargin{
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .row2right{
-  height: 300px;
+  color: white;
+  height: 400px;
   width: 450px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .services{
@@ -467,7 +476,29 @@ margin-right: 150px;
 .contact{
   width: 100%;
   height: 700px;
-  background-color: rgb(237, 237, 237);
+  /*background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;*/
+  position: relative;
+  color: rgb(230, 230, 230);
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(./public/audiLights.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.map{
+  position: absolute;
+  bottom: 1px;
+  width: 100%;
+  font-size: 50px;
+  font-weight:900;
 }
 
 /* Fading animation */
