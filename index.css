@@ -536,16 +536,25 @@ margin-right: 150px;
   width: 30%;
   font-size: 20px;
 }
-
-.map{
+.mapForm{
   display: flex;
-  flex-direction: column;
-  padding-top: 10px;
+  flex-direction: row;
+}
+.map{
   position: absolute;
   bottom: 1px;
+  height: 450px;
   width: 50%;
   font-size: 50px;
   font-weight:900;
+}
+
+.formContainer{
+  position: absolute;
+  float: right;
+  width: 50%;
+  height: 350px;
+  background-color: rgb(80, 80, 80);
 }
 
 /* Fading animation */
