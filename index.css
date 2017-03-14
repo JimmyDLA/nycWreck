@@ -9,6 +9,7 @@ body{
 }
 p{
   font-weight: bolder;
+  margin: 0;
 }
 header{
   width: 100%;
@@ -30,7 +31,7 @@ header{
 }
 
 .logo{
-  width: 400px;
+  width: 30%;
   height: 50px;
   display: inline-block;
   color: rgba(250, 250, 250, 1);
@@ -42,7 +43,7 @@ header{
 }
 
 ul{
-  width: 45vw;
+  width: 70%;
   height: 50px;
   display: inline-block;
   float: right;
@@ -146,8 +147,9 @@ li:hover{
 }
 
 .mainLogo{
-  width: 640px;
+  width: 90%;
   height: 220px;
+
 }
 
 .mapIt{
@@ -563,8 +565,9 @@ margin-right: 150px;
 }
 
 .formContainer{
-  margin-top: -50px;
+  margin-top: -35px;
   width: 30%;
+  font-size: 40px;
 }
 .text{
   margin: 0;
@@ -581,7 +584,7 @@ margin-right: 150px;
   color: black;
 }
 #inputName{
-  width: 350px;
+  width: 80%;
   height: 40px;
   font-size: 14px;
   background-color: rgba(30, 30, 30, 0.7);
@@ -591,7 +594,7 @@ margin-right: 150px;
 }
 
 #inputEmail{
-  width: 350px;
+  width: 80%;
   height: 40px;
   font-size: 14px;
   background-color: rgba(30, 30, 30, 0.7);
@@ -601,7 +604,7 @@ margin-right: 150px;
 }
 
 #inputSubject{
-  width: 350px;
+  width: 80%;
   height: 40px;
   font-size: 14px;
   background-color: rgba(30, 30, 30, 0.7);
@@ -611,7 +614,7 @@ margin-right: 150px;
 }
 
 #inputMessage{
-  width: 350px;
+  width: 80%;
   height: 120px;
   font-size: 14px;
   background-color: rgba(30, 30, 30, 0.7);
