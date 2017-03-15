@@ -268,7 +268,9 @@ li:hover{
   width: 47vw;
   margin-top: 30px;
 }
-
+#missionTitle{
+  margin: 0;
+}
 .row1right{
   height: 400px;
   width: 47vw;
@@ -300,7 +302,6 @@ li:hover{
   height: 400px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   margin-top: 125px;
   justify-content: space-around;
@@ -335,7 +336,6 @@ li:hover{
   background-color: rgb(237, 237, 237);
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -461,7 +461,6 @@ li:hover{
   height: 400px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
   padding-top: 60px;
 }
@@ -469,7 +468,7 @@ li:hover{
 .refNet{
   width: 400px;
   height: 300px;
-  margin-left: 150px;
+  margin-left: 100px;
 }
 
 #refNet{
@@ -482,7 +481,7 @@ li:hover{
 .refInfo{
 width: 400px;
 height: 300px;
-margin-right: 150px;
+margin-right: 100px;
 }
 
 .contact{
