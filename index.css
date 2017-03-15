@@ -118,25 +118,11 @@ li:hover{
 }
 
 
-#fb{
-  background-image: url("./public/facebookLogo.png");
-  background-size: cover;
-  height: 40px;
-  width: 40px;
-}
-
 #ig{
-  background-image: url("./public/instagramLogo.png");
-  background-size: cover;
-  height: 40px;
-  width: 40px;
-}
-
-#tw{
-  background-image: url("./public/twitterLogo.png");
-  background-size: cover;
-  height: 40px;
-  width: 40px;
+  /*background-image: url("./public/logo.instagram.png");
+  background-size: cover;*/
+  height: 50px;
+  width: 90%;
 }
 
 .address{
