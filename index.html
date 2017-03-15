@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>NYC WRECK-A-MENDED</title>
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" >
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Acme|Nunito" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
   </head>
@@ -93,11 +94,11 @@
                 <!--ABOUT PAGE -->
     <div class="about">
       <div class="row1">
-        <div class="row1left">
+        <div data-aos="fade-right" data-aos-delay="900" class="row1left">
           <img id="objImg" src="./public/objectiveImg.jpg" alt="">
         </div>
 
-        <div class="row1right">
+        <div data-aos="fade-left" data-aos-delay="900" class="row1right">
           <div id="workTech">
 
             <h2 id="missionTitle">OUR MISSION</h2>
@@ -113,10 +114,10 @@
       </div>
 
       <div class="row2">
-        <div class="row2left">
+        <div data-aos="fade-down" data-aos-delay="900" class="row2left">
         </div>
 
-        <div class="row2right">
+        <div data-aos="fade-up" data-aos-delay="900" class="row2right">
           <h1 class="lowerMargin">About Us</h1>
           <p>
             For most people, auto repairs is not fun or convenient.
@@ -142,7 +143,7 @@
 
             <!-- SERVICES PAGE -->
     <div class="services">
-      <div class="serviceInfo">
+      <div data-aos="zoom-in-down" data-aos-duration="1900" class="serviceInfo">
         <div class="guarentee">
           <img class="satsTee" src="./public/satisfaction.png" alt="sats">
         </div>
@@ -162,21 +163,21 @@
         <h1 class="serviceTitle">We repair all types of damages, including:</h1>
 
         <div class="brainContainer" id="brainCont1">
-          <div class="threes" id="threes1"><h3>Faded/Chipped Paint</h3></div>
-          <div class="threes" id="threes2"><h3>Dents</h3></div>
-          <div class="threes" id="threes3"><h3>Frame Damage</h3></div>
+          <div class="threes" data-aos="fade-up-left" data-aos-delay="600" id="threes1"><h3>Faded/Chipped Paint</h3></div>
+          <div class="threes" data-aos="fade-up" data-aos-delay="600" id="threes2"><h3>Dents</h3></div>
+          <div class="threes" data-aos="fade-up-right" data-aos-delay="600" id="threes3"><h3>Frame Damage</h3></div>
         </div><br>
 
         <div class="brainContainer" id="brainCont2">
-          <div class="threes" id="threes4"><h3>Rust</h3></div>
+          <div class="threes" data-aos="fade-left" data-aos-delay="600" id="threes4"><h3>Rust</h3></div>
           <div id="carIcon"></div>
-          <div class="threes" id=""><h3>Scratches/Scuff Marks</h3></div>
+          <div class="threes"data-aos="fade-right" data-aos-delay="600" id="threes6"><h3>Scratches/Scuff Marks</h3></div>
         </div><br>
 
         <div class="brainContainer" id="brainCont3">
-          <div class="threes" id=""><h3>Holes</h3></div>
-          <div class="threes" id=""><h3>Dings</h3></div>
-          <div class="threes" id=""><h3>Bumper/Body Damage</h3></div>
+          <div class="threes" data-aos="fade-down-left" data-aos-delay="600" id="threes7"><h3>Holes</h3></div>
+          <div class="threes" data-aos="fade-down" data-aos-delay="600" id="threes8"><h3>Dings</h3></div>
+          <div class="threes" data-aos="fade-down-right" data-aos-delay="600" id="threes9"><h3>Bumper/Body Damage</h3></div>
         </div>
       </div>
     </div>
@@ -185,15 +186,15 @@
     <div class="referrals">
       <div class="redBack">
         <h1 id="refTitle">GET PAID FOR REFERRALS!</h1>
-        <img id="r8" src="./public/r8.jpg" alt="r8">
+        <img data-aos="zoom-in" data-aos-delay="300" id="r8" src="./public/r8.jpg" alt="r8">
       </div>
 
       <div class="networkContainer">
         <div class="refNet">
-          <img id="refNet" src="./public/refNetwork.jpg" alt="networking">
+          <img data-aos="flip-right" data-aos-delay="300" data-aos-duration="1100" id="refNet" src="./public/refNetwork.jpg" alt="networking">
         </div>
 
-        <div class="refInfo">
+        <div data-aos="fade-left" data-aos-delay="300" data-aos-duration="1100" class="refInfo">
           <h2>OUR REFERRAL PROGRAM</h2>
           <p>
             At NYC Wreck-a-mended, we pride ourselves in customer
@@ -239,7 +240,6 @@
 
       <div class="mapForm">
         <div class="map">
-          COME VISIT US:
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12099.052963468566!2d-73.7894714!3d40.7012117!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x36f863788c7108a9!2sNYC+WRECK-A-MENDED+COLLISION+CORP!5e0!3m2!1sen!2sus!4v1489384574599" width="100%" height="370" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
 
@@ -275,5 +275,7 @@
     </footer>
   </body>
   <script src="app.js" charset="utf-8"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" charset="utf-8"></script>
+  <script src="node_modules/aos/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" charset="utf-8"></script> -->
 </html>
