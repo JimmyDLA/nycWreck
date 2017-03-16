@@ -16,10 +16,10 @@
       </div>
 
       <ul>
-        <li onclick="scrollCont()">CONTACT US</li>
-        <li onclick="scrollRef()">REFERRALS</li>
-        <li onclick="scrollServ()">SERVICES</li>
-        <li onclick="scrollAbout()">ABOUT US</li>
+        <li onclick="scrollCont()" id="contactTab">CONTACT US</li>
+        <li onclick="scrollRef()" id="referralTab">REFERRALS</li>
+        <li onclick="scrollServ()" id="servicesTab">SERVICES</li>
+        <li onclick="scrollAbout()" id="aboutTab">ABOUT US</li>
       </ul>
     </header>
 
@@ -28,9 +28,9 @@
       <div class="phoneNums">
         <h2 id="call">CALL US TODAY</h2>
         <img class="icon" src="./public/phoneIcon.png" alt="phone icon">
-        Erik: (917)374-6168 <br>
+        <p id="namenum">Erik: (917)374-6168</p>
         <img class="icon" src="./public/phoneIcon.png" alt="phone icon">
-        Wilson: (917)859-0239 <br>
+        <p id="namenum">Wilson: (917)859-0239</p>
       </div>
 
       <div class="containerTitle">
@@ -49,6 +49,8 @@
         </div>
       </div>
       </div>
+
+      <a class="scrollUp" onclick="scrollTops()">&#8682;</a>
 
     <div class="slideshow-container">
       <div class="mySlides fade">
@@ -92,11 +94,11 @@
                 <!--ABOUT PAGE -->
     <div class="about">
       <div class="row1">
-        <div data-aos="fade-right" data-aos-delay="900" class="row1left">
+        <div data-aos="fade-right" data-aos-delay="600" class="row1left">
           <img id="objImg" src="./public/objectiveImg.jpg" alt="">
         </div>
 
-        <div data-aos="fade-left" data-aos-delay="900" class="row1right">
+        <div data-aos="fade-left" data-aos-delay="600" class="row1right">
           <div id="workTech">
 
             <h2 id="missionTitle">OUR MISSION</h2>
@@ -158,7 +160,7 @@
       </div>
 
       <div class="serviceImg">
-        <h1 class="serviceTitle">We repair all types of damages, including:</h1>
+        <h1 class="serviceTitle">We repair all types of damages:</h1>
 
         <div class="brainContainer" id="brainCont1">
           <div class="threes" data-aos="fade-up-left" data-aos-delay="600" id="threes1"><h3>Faded/Chipped Paint</h3></div>
@@ -218,9 +220,9 @@
 
         <div class="numbers">
           <img class="icon" src="./public/phoneIcon.png" alt="phone icon">
-          <p>(917)374-6168</p>
+          <p>(917)374-6168</p> <br>
           <img class="icon" src="./public/phoneIcon.png" alt="phone icon">
-          <p>(917)859-0239</p>
+          <p>(917)859-0239</p> <br>
           <img class="icon" id="mail" src="./public/mailIcon.png" alt="mail icon">
           <p>nycwreckamended@gmail.com</p>
         </div>

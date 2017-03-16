@@ -152,19 +152,19 @@ return smoothScroll;
 
             //SCROLL FUNCTIONS
 function scrollAbout(){
-  smoothScroll(730);
+  smoothScroll(731);
 }
 
 function scrollServ(){
-  smoothScroll(1830);
+  smoothScroll(1831);
 }
 
 function scrollRef(){
-  smoothScroll(2630)
+  smoothScroll(2631);
 }
 
 function scrollCont(){
-  smoothScroll(3420)
+  smoothScroll(3421);
 }
 
 function scrollMap(){
@@ -189,4 +189,77 @@ function carousel() {
     if (slideIndex > x.length) {slideIndex = 1}
     x[slideIndex-1].style.display = "block";
     setTimeout(carousel, 4000); // Change image every 4 seconds
+}
+
+
+//make function to know where scroll user is at and change nav tab color
+window.onscroll = function() {
+  tabPosition()
+};
+
+function tabPosition() {
+  if (document.body.scrollTop > 0 && document.body.scrollTop < 530) {
+    document.querySelector("#aboutTab").style.backgroundColor = "rgb(225, 38, 43)";
+    document.querySelector("#aboutTab").style.color = "rgb(250, 250, 250)";
+    document.querySelector("#servicesTab").style.backgroundColor = "rgb(225, 38, 43)";
+    document.querySelector("#servicesTab").style.color = "rgb(250, 250, 250)";
+    document.querySelector("#referralTab").style.backgroundColor = "rgb(225, 38, 43)";
+    document.querySelector("#referralTab").style.color = "rgb(250, 250, 250)";
+    document.querySelector("#contactTab").style.backgroundColor = "rgb(225, 38, 43)";
+    document.querySelector("#contactTab").style.color = "rgb(250, 250, 250)";
+    document.querySelector(".scrollUp").style.opacity = "0";
+
+  }
+
+  if (document.body.scrollTop > 530 && document.body.scrollTop < 1630) {
+    document.querySelector("#aboutTab").style.backgroundColor = "rgb(250, 250, 250)";
+    document.querySelector("#aboutTab").style.color = "rgb(225, 38, 43)";
+    document.querySelector("#servicesTab").style.backgroundColor = "rgb(225, 38, 43)";
+    document.querySelector("#servicesTab").style.color = "rgb(250, 250, 250)";
+    document.querySelector("#referralTab").style.backgroundColor = "rgb(225, 38, 43)";
+    document.querySelector("#referralTab").style.color = "rgb(250, 250, 250)";
+    document.querySelector("#contactTab").style.backgroundColor = "rgb(225, 38, 43)";
+    document.querySelector("#contactTab").style.color = "rgb(250, 250, 250)";
+    document.querySelector(".scrollUp").style.opacity = "1";
+
+  }
+
+  if (document.body.scrollTop > 1630 && document.body.scrollTop < 2430) {
+    document.querySelector("#aboutTab").style.backgroundColor = "rgb(225, 38, 43)";
+    document.querySelector("#aboutTab").style.color = "rgb(250, 250, 250)";
+    document.querySelector("#servicesTab").style.backgroundColor = "rgb(250, 250, 250)";
+    document.querySelector("#servicesTab").style.color = "rgb(225, 38, 43)";
+    document.querySelector("#referralTab").style.backgroundColor = "rgb(225, 38, 43)";
+    document.querySelector("#referralTab").style.color = "rgb(250, 250, 250)";
+    document.querySelector("#contactTab").style.backgroundColor = "rgb(225, 38, 43)";
+    document.querySelector("#contactTab").style.color = "rgb(250, 250, 250)";
+    document.querySelector(".scrollUp").style.opacity = "1";
+
+  }
+
+  if (document.body.scrollTop > 2430 && document.body.scrollTop < 3220) {
+    document.querySelector("#aboutTab").style.backgroundColor = "rgb(225, 38, 43)";
+    document.querySelector("#aboutTab").style.color = "rgbrgb(250, 250, 250)";
+    document.querySelector("#servicesTab").style.backgroundColor = "rgb(225, 38, 43)";
+    document.querySelector("#servicesTab").style.color = "rgb(250, 250, 250";
+    document.querySelector("#referralTab").style.backgroundColor = "rgb(250, 250, 250";
+    document.querySelector("#referralTab").style.color = "rgb(225, 38, 43)";
+    document.querySelector("#contactTab").style.backgroundColor = "rgb(225, 38, 43)";
+    document.querySelector("#contactTab").style.color = "rgb(250, 250, 250)";
+    document.querySelector(".scrollUp").style.opacity = "1";
+
+  }
+
+  if (document.body.scrollTop > 3220 && document.body.scrollTop < 4000) {
+    document.querySelector("#aboutTab").style.backgroundColor = "rgb(225, 38, 43)";
+    document.querySelector("#aboutTab").style.color = "rgbrgb(250, 250, 250)";
+    document.querySelector("#servicesTab").style.backgroundColor = "rgb(225, 38, 43)";
+    document.querySelector("#servicesTab").style.color = "rgb(250, 250, 250";
+    document.querySelector("#referralTab").style.backgroundColor = "rgb(225, 38, 43)";
+    document.querySelector("#referralTab").style.color = "rgb(250, 250, 250)";
+    document.querySelector("#contactTab").style.backgroundColor = "rgb(250, 250, 250";
+    document.querySelector("#contactTab").style.color = "rgb(225, 38, 43)";
+    document.querySelector(".scrollUp").style.opacity = "1";
+
+  }
 }
