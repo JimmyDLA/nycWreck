@@ -67,7 +67,6 @@ li{
 li:hover{
   background-color: rgb(250, 250, 250);
   color: rgba(225, 38, 43, 1);
-
 }
 
 
@@ -97,6 +96,10 @@ li:hover{
   font-size: 20px;
 }
 
+#namenum{
+  font-size: 25px;
+}
+
 #call{
   margin: 0;
 }
@@ -119,8 +122,6 @@ li:hover{
 
 
 #ig{
-  /*background-image: url("./public/logo.instagram.png");
-  background-size: cover;*/
   height: 50px;
   width: 90%;
 }
@@ -139,11 +140,11 @@ li:hover{
 }
 
 .mapIt{
-  color: rgb(38, 225, 123);
+  color: rgb(38, 123, 225);
   font-size: 35px;
 }
 .mapIt:hover{
-  color: rgb(18, 255, 103);
+  color: rgb(0, 155, 255);
 }
 
 * {box-sizing:border-box}
@@ -161,12 +162,28 @@ li:hover{
 .mySlides {
     display: none;
     width: 100%;
-    height: 400px;
+    height: 100%;
 
 }
 .slideImg{
   width: 100%;
-  height: 400px;
+  height: 100%;
+}
+.scrollUp {
+  cursor: pointer;
+  position: fixed;
+  top: 80%;
+  right: 1%;
+  z-index: 1;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(50, 50, 50, 0.7);
+  opacity: 0;
 }
 
 /* Next & previous buttons */
