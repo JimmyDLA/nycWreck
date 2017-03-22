@@ -67,16 +67,14 @@ ul{
 }
 
 li{
-  /*display: inline-block;*/
   height: 50px;
-  width: 110px;
+  width: 100%;
   list-style: none;
-  /*float: right;*/
   text-align: center;
   font-family: 'Acme', sans-serif;
   line-height: 50px;
   cursor: pointer;
-
+  /*position: fixed;*/
 }
 li:hover{
   background-color: rgb(250, 250, 250);
@@ -85,6 +83,12 @@ li:hover{
 
 .ul{
   display: none;
+  background-color: rgb(225, 38, 43);
+  color: rgb(255, 255, 255);
+  margin-top: 100px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 
@@ -96,11 +100,6 @@ li:hover{
   margin-top: 50px;
   color: white;
   background-color: rgb(40, 40, 40);
-  /*background: linear-gradient(135deg, rgb(200,200,200) 0%,rgb(150,150,150) 17%,rgb(100,100,100) 40%,rgb(55,55,55) 63%,rgb(2,2,2) 100%);*/
-  /*background: linear-gradient(to bottom right, black, white); /* Standard syntax (must be last) */*/
-  /*background: linear-gradient(to bottom left, black, rgb(100,100,100)); /* Standard syntax */
-  /*background-image: url("./public/whiteMetal.jpg");*/
-  /*background-size: cover;*/
 }
 
 .phoneNums{
@@ -142,7 +141,6 @@ li:hover{
 #ig{
   height: 50px;
   width: 90%;
-  border-radius: 50px;
 }
 
 #ig:hover{
@@ -153,7 +151,6 @@ transform: scale(1.1);
   height: 220px;
   width: 25%;
   text-align: center;
-/*line-height: 50px;*/
 }
 
 .mainLogo{
@@ -718,8 +715,18 @@ footer{
 }
 
 
+@media screen and (min-width: 1001px) {
+  .containerInfo{
+    margin-top: 50px;
+  }
+
+}
+
+
 /* SMALLER SCREENS OR TABLET*/
 @media screen and (max-width: 1071px) and (min-width: 861px) {
+
+
   #namenum{
     font-size: 20px;
   }
@@ -747,8 +754,8 @@ footer{
     height: 100px;
     line-height: 50px;
     align-items: baseline;
-    /*align-items: center;*/
   }
+
   #miniLogo{
     align-self: center;
     height: 67px;
@@ -772,6 +779,15 @@ footer{
   }
   .containerInfo{
     margin-top: 100px;
+    flex-wrap: wrap;
+    height: 440px;
+  }
+
+  .phoneNums{
+    width: 215px;
+  }
+  .address{
+    width: 225px;
   }
 
   #namenum{

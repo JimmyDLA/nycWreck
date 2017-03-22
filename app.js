@@ -153,18 +153,34 @@ return smoothScroll;
             //SCROLL FUNCTIONS
 function scrollAbout(){
   smoothScroll(731);
+  x.classList.toggle("change");
+  document.querySelector(".ul").style.display = "none";
+  document.querySelector(".containerInfo").style.marginTop = "100px"
+  menuOpen = 0;
 }
 
 function scrollServ(){
   smoothScroll(1831);
+  x.classList.toggle("change");
+  document.querySelector(".ul").style.display = "none";
+  document.querySelector(".containerInfo").style.marginTop = "100px"
+  menuOpen = 0;
 }
 
 function scrollRef(){
   smoothScroll(2631);
+  x.classList.toggle("change");
+  document.querySelector(".ul").style.display = "none";
+  document.querySelector(".containerInfo").style.marginTop = "100px"
+  menuOpen = 0;
 }
 
 function scrollCont(){
   smoothScroll(3421);
+  x.classList.toggle("change");
+  document.querySelector(".ul").style.display = "none";
+  document.querySelector(".containerInfo").style.marginTop = "100px"
+  menuOpen = 0;
 }
 
 function scrollMap(){
@@ -264,17 +280,18 @@ function tabPosition() {
   }
 }
 
-let menuOpen = false;
+let menuOpen = 0;
 
 function menuButton(x) {
-
-    if (menuOpen = false) {
+    if (menuOpen === 0) {
       x.classList.toggle("change");
       document.querySelector(".ul").style.display = "inline";
-      menuOpen = true;
-      console.log(menuOpen);
+      document.querySelector(".containerInfo").style.marginTop = "300px";
+      menuOpen = 1;
     }else{
+      x.classList.toggle("change");
       document.querySelector(".ul").style.display = "none";
-      menuOpen = false;
+      document.querySelector(".containerInfo").style.marginTop = "100px";
+      menuOpen = 0;
     }
 }
