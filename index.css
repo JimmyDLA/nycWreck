@@ -297,7 +297,7 @@ li:hover{
       rgba(255, 255, 255, 0.6),
       rgba(255, 255, 255, 0.6)
     ),
-    url(./public/topPics/IMG_0021.jpg);
+    url(./public/topPics/IMG_0021.JPG);
   background-size: cover;
   align-self: center;
   font-size: 25px;
@@ -317,7 +317,7 @@ li:hover{
 .row2left{
   height: 400px;
   width: 550px;
-  background-image: url(./public/topPics/IMG_0102.jpg);
+  background-image: url(./public/topPics/IMG_0034.JPG);
   background-size: cover;
   box-shadow: 0px 2px 47px 8px rgba(64,63,64,1);
   border-radius: 10px;

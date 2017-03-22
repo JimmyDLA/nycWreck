@@ -14,7 +14,7 @@ $(document).ready(function() {
 
         // Making ajax call. Sending data from JS to PHP
         $.ajax({
-            url: "./mail/contact_me.php",
+            url: "../mail/contact_me.php",
             type: "POST",
             data: data
         }).done(function(data) {
