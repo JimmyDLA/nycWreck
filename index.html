@@ -12,18 +12,30 @@
   <body>
     <header>
       <div onclick="scrollTops()" class="logo">
-        <img src="./public/miniLogo.png" alt="spray" id="spray">
-         Wreck-A-Mended
+        <img src="./public/miniLogo.png" alt="spray" id="miniLogo">
+         <p class="title">Wreck-A-Mended</p>
         <!-- <img id="miniLogo" src="./public/miniLogo.png" alt="logo"> -->
       </div>
 
+      <div class="burgerContainer" onclick="menuButton(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
       <ul>
-        <li onclick="scrollCont()" id="contactTab">CONTACT US</li>
-        <li onclick="scrollRef()" id="referralTab">REFERRALS</li>
-        <li onclick="scrollServ()" id="servicesTab">SERVICES</li>
         <li onclick="scrollAbout()" id="aboutTab">ABOUT US</li>
+        <li onclick="scrollServ()" id="servicesTab">SERVICES</li>
+        <li onclick="scrollRef()" id="referralTab">REFERRALS</li>
+        <li onclick="scrollCont()" id="contactTab">CONTACT US</li>
       </ul>
     </header>
+    <div class="ul">
+      <li onclick="scrollAbout()" id="aboutTab">ABOUT US</li>
+      <li onclick="scrollServ()" id="servicesTab">SERVICES</li>
+      <li onclick="scrollRef()" id="referralTab">REFERRALS</li>
+      <li onclick="scrollCont()" id="contactTab">CONTACT US</li>
+    </div>
 
       <!-- MAIN PAGE -->
     <div class="containerInfo">
@@ -97,11 +109,11 @@
                 <!--ABOUT PAGE -->
     <div class="about">
       <div class="row1">
-        <div data-aos="fade-right" data-aos-delay="600" class="row1left">
+        <div data-aos="fade-right" data-aos-delay="500" class="row1left">
           <img id="objImg" src="./public/topPics/IMG_0069.JPG" alt="">
         </div>
 
-        <div data-aos="fade-left" data-aos-delay="600" class="row1right">
+        <div data-aos="fade-left" data-aos-delay="500" class="row1right">
           <div id="workTech">
 
             <h2 id="missionTitle">OUR MISSION</h2>
@@ -117,10 +129,10 @@
       </div>
 
       <div class="row2">
-        <div data-aos="fade-down" data-aos-delay="900" class="row2left">
+        <div data-aos="fade-down" data-aos-delay="500" class="row2left">
         </div>
 
-        <div data-aos="fade-up" data-aos-delay="900" class="row2right">
+        <div data-aos="fade-up" data-aos-delay="500" class="row2right">
           <h1 class="lowerMargin">About Us</h1>
           <p>
             For most people, auto repairs is not fun or convenient.

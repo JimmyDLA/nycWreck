@@ -263,3 +263,18 @@ function tabPosition() {
 
   }
 }
+
+let menuOpen = false;
+
+function menuButton(x) {
+
+    if (menuOpen = false) {
+      x.classList.toggle("change");
+      document.querySelector(".ul").style.display = "inline";
+      menuOpen = true;
+      console.log(menuOpen);
+    }else{
+      document.querySelector(".ul").style.display = "none";
+      menuOpen = false;
+    }
+}
