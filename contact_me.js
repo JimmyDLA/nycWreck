@@ -19,10 +19,13 @@ $(document).ready(function() {
             data: data
         }).done(function(data) {
             console.log('success!');
+            //hide and unhide elements
             //clear all fields
             $('#contactForm').trigger("reset");
         }).fail(function() {
             console.log('fail!');
+            //hide and unhide elements
+
         });
 
     });
