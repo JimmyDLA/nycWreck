@@ -553,6 +553,29 @@ p{
   text-align: center;
 }
 
+#yelp{
+  color: rgb(38, 123, 225);
+  text-decoration: none;
+  font-size: 25px;
+
+}
+
+#days{
+  font-size: 25px;
+  text-align: left;
+}
+
+#allDays{
+  white-space: nowrap;
+}
+#times{
+  padding-left: 20px;
+}
+.timesContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
 .numbers{
   height: 300px;
   width: 500px;
@@ -579,6 +602,7 @@ p{
   height: 200px;
   width: 30%;
   font-size: 20px;
+
 }
 .mapForm{
   display: flex;
