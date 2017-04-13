@@ -575,6 +575,7 @@ p{
   display: flex;
   flex-direction: row;
   align-items: baseline;
+  justify-content: space-between;
 }
 .numbers{
   height: 300px;
