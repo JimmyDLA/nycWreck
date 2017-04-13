@@ -113,8 +113,14 @@ li:hover{
   font-size: 20px;
 }
 
+#numName{
+  color: rgb(38, 123, 225);
+  font-size: 25px;
+}
+
 #namenum{
   font-size: 25px;
+
 }
 
 #call{
@@ -535,15 +541,22 @@ margin-right: 100px;
   width: 30%;
   height: 200px;
 }
+p{
+  text-align: justify;
+}
 
 #cc{
   height: 100px;
   width: 200px;
 }
+#missionText{
+  text-align: center;
+}
 
 .numbers{
   height: 300px;
-  width: 40%;
+  width: 500px;
+  padding: 30px;
   display: flex;
   justify-content: center;
   flex-direction: column;
