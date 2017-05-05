@@ -697,6 +697,11 @@ p{
   background-color: rgb(255, 0, 0);
 }
 
+#faxLogo{
+  height: 30px;
+  width: 30px;
+}
+
 /*Fading animation*/
 .fade {
   -webkit-animation-name: fade;
