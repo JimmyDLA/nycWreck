@@ -109,14 +109,20 @@ li:hover{
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   font-size: 20px;
 }
-
+.rowContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
 #numName{
   color: rgb(38, 123, 225);
   font-size: 25px;
+  padding-left: 20px;
 }
 
 #namenum{
