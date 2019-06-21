@@ -17,6 +17,9 @@
         <!-- <img id="miniLogo" src="./public/miniLogo.png" alt="logo"> -->
       </div>
 
+      <div id="google_translate_element"></div>
+
+
       <div class="burgerContainer" onclick="menuButton(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
@@ -40,14 +43,14 @@
       <!-- MAIN PAGE -->
     <div class="containerInfo">
       <div class="phoneNums">
+        <a class="rowContainer" href="./public/Accident_Prepare_PDF.pdf" download="Accident Prepare Sheet" target="_blank">
+          <img id="faxLogo" src="./public/docIcon.png" alt="doc"><p id="numName">Accident Prepare</p>
+        </a>
         <div class="rowContainer">
           <img id="faxLogo" src="./public/phoneIcon.png" alt=""> <p id="numName">(718)523-9446</p>
         </div>
         <div class="rowContainer">
           <img id="faxLogo" src="./public/Fax_logo.png" alt="fax"><p id="numName">(718)297-3657</p>
-        </div>
-        <div class="rowContainer">
-          <img id="faxLogo" src="./public/docIcon.png" alt="doc"><p id="numName">Download PDF</p>
         </div>
       </div>
 
@@ -72,7 +75,7 @@
 
     <div class="slideshow-container">
       <div class="mySlides fade">
-        <img class="slideImg" src="./public/topPics/frontBusiness.JPG">
+        <img class="slideImg" src="./public/businessFront.jpg">
       </div>
 
       <div class="mySlides fade">
@@ -101,57 +104,7 @@
       <span class="dot" onclick="currentSlide(6)"></span> -->
     </div>
 
-                <!--ABOUT PAGE -->
-    <div class="about">
-      <div class="row1">
-        <div data-aos="fade-right" data-aos-delay="500" class="row1left">
-          <img id="objImg" src="./public/topPics/IMG_0069.JPG" alt="">
-        </div>
-
-        <div data-aos="fade-left" data-aos-delay="500" class="row1right">
-          <div id="workTech">
-
-            <h2 id="missionTitle">OUR MISSION</h2>
-            <p id="missionText">
-              Our solution is simple. We move quickly and
-              efficiently to repair anything that you may need. We are prepared
-              with all the necessary tools and equipment as well as the talent of
-              our team in order to get the job done.
-            </p>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="row2">
-        <div data-aos="fade-down" data-aos-delay="500" class="row2left">
-        </div>
-
-        <div data-aos="fade-up" data-aos-delay="500" class="row2right">
-          <h1 class="lowerMargin">About Us</h1>
-          <p>
-            For most people, auto repairs is not fun or convenient
-            so we want to make the process as easy and enjoyable as possible
-            for you. We genuinely care about your car and your experience.
-            Our first-time customers continually become our long term
-            customers time and time again, choosing us for all their auto
-            needs.
-          </p>
-
-          <h1 class="lowerMargin">Our Objective</h1>
-          <p>
-            We want to maintain your business.
-            We strive to provide our clients with the best
-            quality service possible in order to provide 100% satisfaction.
-            We want to be the auto body shop for all your
-            automotive needs. Check out our customer reviews on
-            <a id="yelp" href="https://www.yelp.com/biz/nyc-wreck-a-mended-queens" target="_blank">Yelp!</a>
-          </p>
-        </div>
-      </div>
-    </div>
-
-            <!-- SERVICES PAGE -->
+    <!-- SERVICES PAGE -->
     <div class="services">
       <div data-aos="zoom-in-down" data-aos-duration="1900" class="serviceInfo">
         <div class="guarentee">
@@ -191,6 +144,52 @@
         </div>
       </div>
     </div>
+
+
+                <!--ABOUT PAGE -->
+    <div class="about">
+      <div class="row1">
+        <div data-aos="fade-left" data-aos-delay="500" class="row1right">
+          <h2 id="missionTitle">OUR MISSION</h2>
+          <p id="missionText">
+            Our solution is simple. We move quickly and
+            efficiently to repair anything that you may need. We are prepared
+            with all the necessary tools and equipment as well as the talent of
+            our team in order to get the job done.
+          </p>
+        </div>
+      </div>
+
+      <div class="row2">
+        <div data-aos="fade-right" data-aos-delay="500" class="row2right">
+          <h1 id="missionTitle">About Us</h1>
+          <p id="missionText">
+            For most people, auto repairs is not fun or convenient
+            so we want to make the process as easy and enjoyable as possible
+            for you. We genuinely care about your car and your experience.
+            Our first-time customers continually become our long term
+            customers time and time again, choosing us for all their auto
+            needs.
+          </p>
+        </div>
+      </div>
+
+      <div class="row3">
+        <div data-aos="fade-left" data-aos-delay="500" class="row1right">
+          <h1 id="missionTitle">Our Objective</h1>
+          <p id="missionText">
+            We want to maintain your business.
+            We strive to provide our clients with the best
+            quality service possible in order to provide 100% satisfaction.
+            We want to be the auto body shop for all your
+            automotive needs. Check out our customer reviews on
+            <a id="yelp" href="https://www.yelp.com/biz/nyc-wreck-a-mended-queens" target="_blank">Yelp!</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+ 
 
             <!--REFERRALS PAGE  -->
     <div class="referrals">
@@ -253,7 +252,7 @@
         </div>
 
         <div class="formContainer">
-          <p class="text">MESSAGE US:</p>
+          <p class="text">Message Us:</p>
           <form id="contactForm">
             <div class="containerForm">
               <!-- <p class="text">Enter Full Name</p> -->
@@ -281,6 +280,7 @@
         104-15 Merrick Blvd Jamaica NY, 11433  <br>
         Phone: (718)523-9446 | Fax: (718)297-3657
       </p>
+      <img class="credit" src="./public/creditCards.png">
     </footer>
   </body>
 
@@ -289,4 +289,11 @@
   <script src="./public/aos/dist/aos.js"></script>
   <script>AOS.init();</script>
   <script src="contact_me.js"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    </script> 
+  <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </html>

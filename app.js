@@ -149,7 +149,6 @@ return smoothScroll;
     dots[slideIndex-1].className += " active";
   }
 
-
             //SCROLL FUNCTIONS
 function scrollAbout(){
   smoothScroll(731);

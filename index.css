@@ -116,7 +116,7 @@ li:hover{
 .rowContainer{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
 }
 #numName{
@@ -269,7 +269,7 @@ transform: scale(1.1);
 
 .about{
   width: 100%;
-  height: 1100px;
+  height: 1200px;
   background-color: rgb(250, 250, 250);
   background-size: cover;
   background-position: center;
@@ -280,23 +280,12 @@ transform: scale(1.1);
 
 .row1{
   width: 100%;
-  height: 400px;
+  height: 300px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 70px;
-}
-
-.row1left{
-  height: 400px;
-  width: 47vw;
-  background-color: rgba(200, 38, 43, 0.9);
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  box-shadow: 0px 0px 50px -6px rgba(0,0,0,0.75);
-
 }
 
 #objImg{
@@ -305,51 +294,46 @@ transform: scale(1.1);
   margin-top: 30px;
 }
 #missionTitle{
-  margin: 0;
+  margin-top: -50px;
+  text-align: center;
+  font-size: 35px;
+}
+
+#missionText{
+  font-size: 20px;
+  text-align: left;
 }
 .row1right{
-  height: 400px;
-  width: 47vw;
-  background-color: rgba(200, 38, 43, 0.9);
-  display: flex;
-  margin-top: 30px;
-  box-shadow: 0px 0px 50px -6px rgba(0,0,0,0.75);
-
-}
-
-#workTech{
-  margin-top: -30px;
   height: 300px;
-  width: 47vw;
-  background:
-    linear-gradient(
-      rgba(255, 255, 255, 0.6),
-      rgba(255, 255, 255, 0.6)
-    ),
-    url(./public/topPics/IMG_0021.JPG);
-  background-size: cover;
-  align-self: center;
-  font-size: 25px;
-  text-align: center;
+  width: 600px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .row2{
   width: 100%;
-  height: 400px;
+  height: 300px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin-top: 125px;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top: 70px;
 }
 
-.row2left{
-  height: 400px;
-  width: 550px;
-  background-image: url(./public/topPics/IMG_0034.JPG);
-  background-size: cover;
-  box-shadow: 0px 2px 47px 8px rgba(64,63,64,1);
-  border-radius: 10px;
+.row3{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 70px;
 }
 
 .lowerMargin{
@@ -358,18 +342,24 @@ transform: scale(1.1);
 }
 
 .row2right{
+  height: 300px;
+  width: 600px;
   color: white;
-  height: 400px;
-  width: 450px;
   background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  padding: 20px;
+  margin-left: 20px;
   border-radius: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 20px;
 }
 
 .services{
+  padding-top: 100px;
+  padding-bottom: 100px;
   width: 100%;
-  height: 800px;
+  height: 950px;
   background-color: rgb(237, 237, 237);
   display: flex;
   flex-direction: row;
@@ -556,9 +546,6 @@ p{
   height: 100px;
   width: 200px;
 }
-#missionText{
-  text-align: center;
-}
 
 #yelp{
   color: rgb(38, 123, 225);
@@ -707,6 +694,13 @@ p{
 #faxLogo{
   height: 30px;
   width: 30px;
+  margin-left: 20px;
+}
+
+.credit{
+  height: 100px;
+  width: 200px;
+  /* margin-right: 100px; */
 }
 
 /*Fading animation*/
@@ -730,11 +724,12 @@ p{
 footer{
   display: flex;
   align-items: center;
-  height: 100px;
+  height: 150px;
   width: 100%;
   background-color: rgba(50, 50, 50, 1);
   color: rgb(180, 180, 180);
   font-size: 13px;
+  justify-content: space-between;
 }
 .burgerContainer {
     display: none;
