@@ -27,10 +27,13 @@
       </div>
 
       <ul>
-        <li onclick="scrollAbout()" id="aboutTab">ABOUT US</li>
-        <li onclick="scrollServ()" id="servicesTab">SERVICES</li>
-        <li onclick="scrollRef()" id="referralTab">REFERRALS</li>
-        <li onclick="scrollCont()" id="contactTab">CONTACT US</li>
+        <li onclick="scrollServ()" class="liHover" id="servicesTab">SERVICES</li>
+        <li class="border" ></li>
+        <li onclick="scrollAbout()" class="liHover" id="aboutTab">ABOUT US</li>
+        <li class="border" ></li>
+        <li onclick="scrollRef()" class="liHover"id="referralTab">REFERRALS</li>
+        <li class="border" ></li>
+        <li onclick="scrollCont()" class="liHover" id="contactTab">CONTACT US</li>
       </ul>
     </header>
     <div class="ul">
@@ -104,19 +107,20 @@
       <span class="dot" onclick="currentSlide(6)"></span> -->
     </div>
 
-    <!-- SERVICES PAGE -->
+                <!-- SERVICES PAGE -->
     <div class="services">
       <div data-aos="zoom-in-down" data-aos-duration="1900" class="serviceInfo">
         <div class="guarentee">
           <img class="satsTee" src="./public/satisfaction.png" alt="sats">
+          <h1 id="star">**</h1>
         </div>
 
-        <h1 class="serviceTitle">OUR SERVICES</h1>
+        <h1 class="serviceTitle">Services Include</h1>
         <p>
-          More vehicles are on the road which means more accidents can
-          occur necessitating our quality of services. Our goal is to
-          provide convenience and customer satisfaction to everyone by
+          Our goal is to provide convenience and customer satisfaction to everyone by
           providing repairs on all types of vehicles to allow a safer ride.
+          More vehicles are on the road which means more accidents can
+          occur necessitating our quality of services.
           We take care of all types of damages, whether the job is light or
           heavy we take pride in making sure the job is done well.
         </p>
@@ -289,11 +293,11 @@
   <script src="./public/aos/dist/aos.js"></script>
   <script>AOS.init();</script>
   <script src="contact_me.js"></script>
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
     }
     </script> 
-  <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
 
 </html>

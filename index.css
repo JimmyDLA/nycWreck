@@ -59,6 +59,7 @@ ul{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   /*display: inline-block;*/
   /*float: right;*/
   color: rgb(250, 250, 250);
@@ -67,7 +68,6 @@ ul{
 }
 
 li{
-  height: 70px;
   width: 100%;
   list-style: none;
   text-align: center;
@@ -75,11 +75,29 @@ li{
   line-height: 50px;
   cursor: pointer;
   line-height: 4.5;
-  /*position: fixed;*/
+
+  /* border-right: 2px solid white; */
 }
-li:hover{
+.border{
+  height: 50px;
+  width: 5px;
+  background-color: white;
+
+}
+#contactTab{
+  /* border-right: 2px solid white; */
+  border: none;
+}
+
+.liHover:hover{
   background-color: rgb(250, 250, 250);
   color: rgba(225, 38, 43, 1);
+  /* border: 5px solid rgb(225, 38, 43);s */
+  border:0px solid  rgb(225, 38, 43);
+  outline: 15px solid rgb(225, 38, 43);
+  outline-offset: -15px;
+  /* border-radius: 10px; */
+
 }
 
 .ul{
@@ -297,6 +315,7 @@ transform: scale(1.1);
   margin-top: -50px;
   text-align: center;
   font-size: 35px;
+  color: rgb(225, 38, 43);
 }
 
 #missionText{
@@ -447,6 +466,13 @@ transform: scale(1.1);
   width: 100%;
   color: white;
   border-radius: 20px;
+  display: flex;
+  flex-direction: row
+}
+
+#star{
+  margin-left: -50px;
+  margin-top: 175px;
 }
 
 .satsTee{
