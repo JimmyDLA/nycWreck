@@ -6,6 +6,8 @@ body{
   display: flex;
   flex-direction: column;
   margin: 0;
+  /* padding: 0px 20px 0px 20px; */
+
 }
 p{
   font-weight: bolder;
@@ -26,6 +28,9 @@ header{
   /*background: linear-gradient(to bottom left, black, rgb(100,100,100)); /* Standard syntax */
 }
 
+a{
+  color: rgb(180, 0 ,0);
+}
 
 #miniLogo{
   height: 45px;
@@ -34,8 +39,8 @@ header{
 .title{
   font-size: 30px;
   height: 50px;
-  width: 300px;
   margin: 0;
+  /* padding-left: 40px; */
 }
 
 .logo{
@@ -48,8 +53,8 @@ header{
   color: rgba(250, 250, 250, 1);
   font-size: 30px;
   line-height: 50px;
-  font-family: 'Martel', serif;
-  padding-left: 20px;
+  /* font-family: 'Martel', serif; */
+  padding-left: 40px;
   cursor: pointer;
 }
 
@@ -114,30 +119,80 @@ li{
 
 
 .containerInfo{
-  height: 420px;
+  height: 520px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  flex-direction: row;
-  margin-top:20px;
-  color: rgb(42, 42, 42);
-  background-image: url("./public/white_brick2.jpg");
+  flex-direction: column;
+  margin-top: 70px;
+  color:white;
+  background-image: url("./public/footer.jpg");
   background-repeat: repeat;
-  background-size: 300px 300px;
+  background-size: 13px 13px;
 
 
 }
 
+.infoRow1{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+}
+.infoRow2{
+  padding: 0 40px 0 40px;
+  width: 100%;
+  
+}
+
+.welcomeTitle{
+  color: rgb(234, 201, 79);
+}
+
+.welcome{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.welcomeParagraph{
+  width: 700px;
+  font-size: 20px;
+}
+
+.listContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 500px;
+  height: 250px;
+}
+.list{
+  width: 400px;
+  height: 35px;
+  justify-content: flex-start;
+  cursor: auto;
+  padding-left: 20px;
+}
+
+#listText{
+  margin-left: 10px
+}
+
 .phoneNums{
   height: 220px;
-  width: 25%;
+  width: 360px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   font-size: 20px;
+  padding-left: 20px;
 }
 .rowContainer{
   display: flex;
@@ -145,11 +200,15 @@ li{
   justify-content: flex-start;
   width: 100%;
 }
-#numName{
-  color: rgb(42, 42, 42);
+.numName{
+  color: white;
   font-size: 22px;
   padding-left: 20px;
-  font-family: 'Martel', serif;
+  /* font-family: 'Martel', serif; */
+}
+#pdfLink:hover{
+  transform: scale(1.1);
+  color: rgb(180, 0 ,0);
 }
 
 #namenum{
@@ -189,9 +248,10 @@ transform: scale(1.1);
 
 .address{
   height: 220px;
-  width: 25%;
+  width: 360px;
   text-align: center;
-  font-family: 'Martel', serif;
+  /* font-family: 'Martel', serif; */
+  padding-right: 40px;
 }
 
 .mainLogo{
@@ -201,18 +261,22 @@ transform: scale(1.1);
 }
 
 .mapIt{
-  color: rgb(38, 123, 225);
+  color: white;
   font-size: 35px;
 }
 .slideBackground{
   width: 100%;
+  height: 500px;
+  padding: 0px 40px 0 40px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(white, black);
+  align-items: center;
+  background-image: linear-gradient(rgb(41,41,41), rgb(237,237,237));
 }
 .mapIt:hover{
-  color: rgb(0, 155, 255);
-}
+  color: rgb(180, 0, 0);
+};
 
 * {box-sizing:border-box}
 
@@ -220,11 +284,83 @@ transform: scale(1.1);
 .slideshow-container {
   position: relative;
   margin: 0;
-  width: 95%;
+  width: 100%;
   height: 400px;
-  align-self: center;
+  /* align-self: center; */
   box-shadow: 0px 2px 16px 9px rgba(64,64,64,1);
 
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none;
+  justify-content: center;
+  align-items: center; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+* {box-sizing: border-box;}
+
+#spanContainer{
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  color: black;
+  position: relative;
+  left: 110%;
+  border-radius: 50px;
+  top: 5%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 38px;
+  z-index: 4;
+}
+/* #xSpan{
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  color: black;
+  position: relative;
+  right: 70%;
+  top: 5%;
+} */
+.img-comp-container {
+  position: relative;
+  height: 200px;
+  width: 250px; /*should be the same height as the images*/
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow:hidden;
+}
+
+.img-comp-img img {
+  display:block;
+  vertical-align:middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index:9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
 }
 
 .mySlides {
@@ -297,20 +433,23 @@ transform: scale(1.1);
   background-color: #717171;
 }
 
-.dots{
-  background: linear-gradient(black, rgb(237,237,237));
-  height: 200px;
-}
-
 .about{
   width: 100%;
   height: 1400px;
-  background-color: rgb(250, 250, 250);
-  background-size: cover;
+  /* background-color: rgb(250, 250, 250); */
+  /* background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  background-image: url("./public/gtr.jpg");
-  background-repeat: no-repeat;
+  background-attachment: fixed; */
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(./public/gtr.jpg)
+    no-repeat
+    fixed
+    center;
+  /* background-repeat: no-repeat; */
 }
 
 .row1{
@@ -318,9 +457,27 @@ transform: scale(1.1);
   height: 400px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   margin-top: 70px;
+  padding: 0 40px 0 40px;
+}
+
+.aboutUsImgContainer{
+  width: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+#aboutUsImg{
+  height: 300px;
+  width: 450px;
+  border-radius: 10px;
+  background-color: rgba(200, 200, 200, 0.5);
+  /* border: rgb(255, 255, 255) solid 2px; */
+  -webkit-box-shadow: 0px 10px 50px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 50px -10px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 50px -10px rgba(0,0,0,0.75);  
 }
 
 #objImg{
@@ -329,14 +486,14 @@ transform: scale(1.1);
   margin-top: 30px;
 }
 #missionTitle{
-  margin-top: -50px;
+  margin-top: -20px;
   text-align: center;
   font-size: 35px;
-  color: rgb(180, 0, 0);
+  color: rgb(234, 201, 79);
 }
 
 #missionText{
-  font-size: 20px;
+  font-size: 16px;
   text-align: justify;
 }
 
@@ -347,12 +504,11 @@ transform: scale(1.1);
 
 .row1right{
   height: 300px;
-  width: 100%;
+  width: 600px;
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   padding: 20px;
-  margin-left: 20px;
   margin-right: 20px;
   border-radius: 10px;
   flex-direction: column;
@@ -364,9 +520,10 @@ transform: scale(1.1);
   height: 400px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  padding: 0 40px 0 40px;
 }
 .goldContainer{
   margin-left: 20px;
@@ -387,9 +544,10 @@ transform: scale(1.1);
   height: 300px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   margin-top: 100px;
+  padding: 0 40px 0 40px;
 }
 
 .lowerMargin{
@@ -399,16 +557,14 @@ transform: scale(1.1);
 
 .row2right{
   height: 300px;
-  width: 600px;
+  width: 750px;
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   padding: 20px;
-  margin-left: 20px;
   border-radius: 10px;
   flex-direction: column;
   justify-content: center;
-  margin-right: 20px;
 }
 
 .services{
@@ -603,10 +759,10 @@ margin-right: 100px;
       rgba(0, 0, 0, 0.5)
     ),
     url(./public/audiLights.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .mainContact{
@@ -614,6 +770,7 @@ margin-right: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 0 40px 0 40px;
 }
 
 .payment{
@@ -631,7 +788,7 @@ p{
 
 #yelp{
   color: rgb(38, 123, 225);
-  font-size: 25px;
+  font-size: 20px;
 
 }
 
@@ -655,7 +812,6 @@ p{
 .numbers{
   height: 300px;
   width: 500px;
-  padding: 30px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -687,6 +843,7 @@ p{
   font-size: 50px;
   font-weight:900;
   height:400px;
+  padding: 0 40px 0 40px;
 }
 .map{
   height: 450px;
@@ -720,6 +877,13 @@ p{
   font-size: 19px;
   color: black;
 }
+input{
+  padding-left: 20px;
+}
+textarea{
+  padding-left: 20px;
+}
+
 #inputName{
   width: 80%;
   height: 40px;
@@ -858,9 +1022,8 @@ footer{
 
 @media screen and (min-width: 1001px) {
   .containerInfo{
-    margin-top: 20px;
+    margin-top: 70px;
   }
-
 }
 
 
@@ -933,4 +1096,11 @@ footer{
   .address{
     font-size: 13px;
   }
+}
+
+.newSlider{
+  background-color: white;
+  width: 100%;
+  height: 690px;
+  padding: 0 20px 0 20px;
 }

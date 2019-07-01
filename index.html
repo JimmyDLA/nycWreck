@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="icon" href="./public/miniLogo.png">
+    <link rel="icon" href="./public/miniLogo1.png">
     <title>WRECK-A-MENDED</title>
     <link rel="stylesheet" href="./public/aos/dist/aos.css" >
     <link href="https://fonts.googleapis.com/css?family=Martel:800&display=swap" rel="stylesheet">
@@ -13,13 +13,10 @@
   <body>
     <header>
       <div onclick="scrollTops()" class="logo">
-        <img src="./public/miniLogo.png" alt="spray" id="miniLogo">
-         <p class="title">Wreck-A-Mended</p>
-        <!-- <img id="miniLogo" src="./public/miniLogo.png" alt="logo"> -->
+        <p class="title">NYC Wreck-A-Mended</p>
       </div>
 
       <div id="google_translate_element"></div>
-
 
       <div class="burgerContainer" onclick="menuButton(this)">
         <div class="bar1"></div>
@@ -37,6 +34,7 @@
         <li onclick="scrollCont()" class="liHover" id="contactTab">CONTACT US</li>
       </ul>
     </header>
+
     <div class="ul">
       <li onclick="scrollAbout()" id="aboutTab">ABOUT US</li>
       <li onclick="scrollServ()" id="servicesTab">SERVICES</li>
@@ -44,35 +42,80 @@
       <li onclick="scrollCont()" id="contactTab">CONTACT US</li>
     </div>
 
-      <!-- MAIN PAGE -->
+                          <!-- MAIN PAGE -->
     <div class="containerInfo">
-      <div class="phoneNums">
-        <a class="rowContainer" href="./public/Accident_Prepare_PDF.pdf" download="Accident Prepare Sheet" target="_blank">
-          <img id="faxLogo" src="./public/docIcon.png" alt="doc"><p id="numName">Accident Prepare</p>
-        </a>
-        <div class="rowContainer">
-          <img id="faxLogo" src="./public/phoneIcon.png" alt=""> <p id="numName">(718)523-9446</p>
+      <div class="infoRow1">
+        <div class="phoneNums">
+          <a class="rowContainer" href="./public/Accident_Prepare_PDF.pdf" download="Accident Prepare Sheet" target="_blank">
+            <img id="faxLogo" src="./public/docIcon.png" alt="doc">
+            <p id="pdfLink" class="numName">Accident Prepare</p>
+          </a>
+          <div class="rowContainer">
+            <img id="faxLogo" src="./public/phoneIcon.png" alt=""> 
+            <p class="numName">(718)523-9446</p>
+          </div>
+          <div class="rowContainer">
+            <img id="faxLogo" src="./public/Fax_logo.png" alt="fax">
+            <p class="numName">(718)297-3657</p>
+          </div>
         </div>
-        <div class="rowContainer">
-          <img id="faxLogo" src="./public/Fax_logo.png" alt="fax"><p id="numName">(718)297-3657</p>
+
+        <div class="containerTitle">
+            <img class="mainLogo" src="./public/nycLogo.png" alt="logo">
+        </div>
+
+        <div class="address">
+          <h2>
+            104-15 Merrick Blvd <br>
+            Jamaica NY, 11433 <br>
+            <a onclick="scrollMap()" class="mapIt" href="#">Map it!</a>
+          </h2><br>
+
+          <div class="socialNet">
+            <a id="ig" href="https://www.instagram.com/nycwreckamended/" target="_blank"><img id="ig" src="./public/logo.instagram.png" alt="IG"></a>
+          </div>
         </div>
       </div>
+      <div class="infoRow2">
+          <h1 class="welcomeTitle">
+              <u>Welcome to NYC Wreck-A-Mended</u>
+          </h1>
+          <div class="welcome">
+            <p class="welcomeParagraph">
+                At Sonny's Collision, we are committed to earn your business by making 
+                you the customer our Priority. We pride ourselves as having quick 
+                response times and a very courteous staff. We provide full auto body, 
+                collision repair, dent removal, hail repair, scratch removal and car 
+                painting services for all makes and models including imports, performed 
+                by ASE certified technicians.
+            </p>
+            
 
-      <div class="containerTitle">
-          <img class="mainLogo" src="./public/nycLogo.png" alt="logo">
+            <ul class="listContainer">
+              <li class="list">
+                <img id="faxLogo" src="./public/tools.png"> 
+                <p id="listText">Complete Collision Repair</p>
+              </li>
+              <li class="list">
+                <img id="faxLogo" src="./public/tools.png"> 
+                <p id="listText">Pick-Up and Drop-Off Service</p>
+              </li>
+              <li class="list">
+                <img id="faxLogo" src="./public/tools.png"> 
+                <p id="listText">Complete Collision Repair</p>
+              </li>
+              <li class="list">
+                <img id="faxLogo" src="./public/tools.png"> 
+                <p id="listText">Customer Satisfaction</p>
+              </li>
+              <li class="list">
+                <img id="faxLogo" src="./public/tools.png"> 
+                <p id="listText">Paint Jobs</p>
+              </li>
+            </ul>
+          </div>
       </div>
 
-      <div class="address">
-        <h2>
-          104-15 Merrick Blvd <br>
-          Jamaica NY, 11433 <br>
-          <a onclick="scrollMap()" class="mapIt" href="#">Map it!</a>
-        </h2><br>
-
-        <div class="socialNet">
-          <a id="ig" href="https://www.instagram.com/nycwreckamended/" target="_blank"><img id="ig" src="./public/logo.instagram.png" alt="IG"></a>
-        </div>
-      </div>
     </div>
 
     <a class="scrollUp" onclick="scrollTops()">&#8682;</a>
@@ -92,26 +135,22 @@
         </div>
 
         <div class="mySlides fade">
-          <img class="slideImg" src="./public/bmw.jpg">
+          <img class="slideImg" src="./public/topPics/IMG_00791.jpg">
         </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-    </div>
-
-    <!-- <br> -->
-    <div class="dots" style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-      <!-- <span class="dot" onclick="currentSlide(5)"></span>
-      <span class="dot" onclick="currentSlide(6)"></span> -->
+      <div class="dots" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
     </div>
 
 
-                <!-- SERVICES PAGE -->
+                            <!-- SERVICES PAGE -->
     <div class="services">
       <div data-aos="zoom-in-down" data-aos-duration="1900" class="serviceInfo">
         <div class="collisionContainer">
@@ -131,31 +170,45 @@
         <h1 class="serviceTitle">We repair all types of damages:</h1>
 
         <div class="brainContainer" id="brainCont1">
-          <div class="threes" data-aos="fade-up-left" data-aos-delay="600" id="threes1"><h3>Faded/Chipped Paint</h3></div>
-          <div class="threes" data-aos="fade-up" data-aos-delay="600" id="threes2"><h3>Dents</h3></div>
-          <div class="threes" data-aos="fade-up-right" data-aos-delay="600" id="threes3"><h3>Frame Damage</h3></div>
+          <div onclick="on(this)" class="threes" data-aos="fade-up-left" data-aos-delay="600" id="threes1"><h3>Faded/Chipped Paint</h3></div>
+          <div onclick="on(this)" class="threes" data-aos="fade-up" data-aos-delay="600" id="threes2"><h3>Dents</h3></div>
+          <div onclick="on(this)" class="threes" data-aos="fade-up-right" data-aos-delay="600" id="threes3"><h3>Frame Damage</h3></div>
         </div><br>
 
         <div class="brainContainer" id="brainCont2">
-          <div class="threes" data-aos="fade-left" data-aos-delay="600" id="threes4"><h3>Rust</h3></div>
+          <div onclick="on(this)" class="threes" data-aos="fade-left" data-aos-delay="600" id="threes4"><h3>Rust</h3></div>
           <div id="carIcon"></div>
-          <div class="threes"data-aos="fade-right" data-aos-delay="600" id="threes6"><h3>Scratches/Scuff Marks</h3></div>
+          <div onclick="on(this)" class="threes"data-aos="fade-right" data-aos-delay="600" id="threes6"><h3>Scratches/Scuff Marks</h3></div>
         </div><br>
 
         <div class="brainContainer" id="brainCont3">
-          <div class="threes" data-aos="fade-down-left" data-aos-delay="600" id="threes7"><h3>Dip Paint</h3></div>
-          <div class="threes" data-aos="fade-down" data-aos-delay="600" id="threes8"><h3>Dings/Holes</h3></div>
-          <div class="threes" data-aos="fade-down-right" data-aos-delay="600" id="threes9"><h3>Bumper/Body Damage</h3></div>
+          <div onclick="on(this)" class="threes" data-aos="fade-down-left" data-aos-delay="600" id="threes7"><h3>Dip Paint</h3></div>
+          <div onclick="on(this)" class="threes" data-aos="fade-down" data-aos-delay="600" id="threes8"><h3>Dings/Holes</h3></div>
+          <div onclick="on(this)" class="threes" data-aos="fade-down-right" data-aos-delay="600" id="threes9"><h3>Bumper/Body Damage</h3></div>
         </div>
       </div>
     </div>
 
+    <div id="overlay">
+      <div class="img-comp-container">
+        <div id="spanContainer" onclick="off()">
+          <span id="xSpan">&#10006;</span>
+        </div> 
+        <div class="img-comp-img">
+            <div class="img-comp-slider"></div>
+          <img id="img1-comp" src="./public/objectiveImg.jpg" width="300" height="200">
+        </div>
+        <div class="img-comp-img img-comp-overlay">
+          <img id="img2-comp" src="./public/objectiveImg2.jpg" width="300" height="200">
+        </div>
+      </div>
+    </div>
 
-                <!--ABOUT PAGE -->
+                          <!--ABOUT PAGE -->
     <div class="about">
       <div class="row1">
         <div data-aos="fade-left" data-aos-delay="500" class="row1right">
-          <h2 id="missionTitle">About Us</h2>
+          <h2 id="missionTitle"><u>About Us</u></h2>
           <p id="missionText">
             For most people, auto repairs is not fun or convenient
             so we want to make the process as easy and enjoyable as possible
@@ -169,6 +222,9 @@
             the complete and safe repair of your vehicle. 
           </p>
         </div>
+        <div class="aboutUsImgContainer" data-aos="fade-right" data-aos-delay="500">
+          <img id="aboutUsImg" src="./public/workTech.jpg" alt="about us">
+        </div>
       </div>
 
       <div class="row2">
@@ -176,6 +232,7 @@
           <img id="goldClassLogo" src="./public/Gold-Class-Logo.png" alt="Gold-Class-Logo">
         </div>
         <div data-aos="fade-right" data-aos-delay="500" class="row2right">
+          <h2 id="missionTitle"><u>Gold Class</u></h2>
           <p id="icarText">
               As a Gold Class shop, we require each of our technicians involved in collision repair to take ongoing
               training every year. This includes classes on new vehicle technologies and the latest repair techniques.
@@ -191,7 +248,7 @@
 
       <div class="row3">
         <div data-aos="fade-left" data-aos-delay="500" class="row1right">
-          <h1 id="missionTitle">Our Objective</h1>
+          <h1 id="missionTitle"> <u>Our Objective</u></h1>
           <p id="missionText">
             We want to maintain your business.
             Our solution is simple. We move quickly and
@@ -205,12 +262,206 @@
             <a id="yelp" href="https://www.yelp.com/biz/nyc-wreck-a-mended-queens" target="_blank">Yelp!</a>
           </p>
         </div>
+        <div class="aboutUsImgContainer" data-aos="fade-right" data-aos-delay="500">
+          <img id="aboutUsImg" src="./public/objectiveImg2.jpg" alt="about us">
+        </div>
       </div>
     </div>
 
- 
+                          <!--NEW SLIDER PAGE -->
+    <div class="newSlider">
 
-            <!--REFERRALS PAGE  -->
+      <script src="js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:800,x:0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:-0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:-0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:-0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$Cols:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$Rows:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$Cols:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:-0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$Rows:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:-0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$SlideOut:true,$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,$Delay:20,$Clip:3,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,$Delay:20,$Clip:3,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,$Delay:20,$Clip:12,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,$Delay:20,$Clip:12,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $SpacingX: 5,
+                $SpacingY: 5
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider arrow skin 106 css*/
+        .jssora106 {display:block;position:absolute;cursor:pointer;}
+        .jssora106 .c {fill:#fff;opacity:.3;}
+        .jssora106 .a {fill:none;stroke:#000;stroke-width:350;stroke-miterlimit:10;}
+        .jssora106:hover .c {opacity:.5;}
+        .jssora106:hover .a {opacity:.8;}
+        .jssora106.jssora106dn .c {opacity:.2;}
+        .jssora106.jssora106dn .a {opacity:1;}
+        .jssora106.jssora106ds {opacity:.3;pointer-events:none;}
+
+        /*jssor slider thumbnail skin 101 css*/
+        .jssort101 .p {position: absolute;top:0;left:0;box-sizing:border-box;background:#000;}
+        .jssort101 .p .cv {position:relative;top:0;left:0;width:100%;height:100%;border:2px solid #000;box-sizing:border-box;z-index:1;}
+        .jssort101 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;visibility:hidden;}
+        .jssort101 .p:hover .cv, .jssort101 .p.pdn .cv {border:none;border-color:transparent;}
+        .jssort101 .p:hover{padding:2px;}
+        .jssort101 .p:hover .cv {background-color:rgba(0,0,0,6);opacity:.35;}
+        .jssort101 .p:hover.pdn{padding:0;}
+        .jssort101 .p:hover.pdn .cv {border:2px solid #fff;background:none;opacity:.35;}
+        .jssort101 .pav .cv {border-color:#fff;opacity:.35;}
+        .jssort101 .pav .a, .jssort101 .p:hover .a {visibility:visible;}
+        .jssort101 .t {position:absolute;top:0;left:0;width:100%;height:100%;border:none;opacity:.6;}
+        .jssort101 .pav .t, .jssort101 .p:hover .t{opacity:1;}
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:680px;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:580px;overflow:hidden;">
+        <div>
+            <img data-u="image" src="public/topPics/IMG_0102.JPG" />
+            <img data-u="thumb" src="public/topPics/IMG_0102.JPG" />
+        </div>  
+        <div>
+            <img data-u="image" src="public/topPics/IMG_0034.JPG" />
+            <img data-u="thumb" src="public/topPics/IMG_0034.JPG" />
+        </div>
+        <div>
+            <img data-u="image" src="public/topPics/IMG_0056.JPG" />
+            <img data-u="thumb" src="public/topPics/IMG_0056.JPG" />
+        </div>
+        <div>
+            <img data-u="image" src="public/topPics/IMG_0021.JPG" />
+            <img data-u="thumb" src="public/topPics/IMG_0021.JPG" />
+        </div>
+        <div>
+            <img data-u="image" src="public/topPics/IMG_0069.JPG" />
+            <img data-u="thumb" src="public/topPics/IMG_0069.JPG" />
+        </div>
+        <div>
+            <img data-u="image" src="public/topPics/IMG_0086.JPG" />
+            <img data-u="thumb" src="public/topPics/IMG_0086.JPG" />
+        </div>
+        <div>
+            <img data-u="image" src="public/topPics/IMG_0100.JPG" />
+            <img data-u="thumb" src="public/topPics/IMG_0100.JPG" />
+        </div>
+        <div>
+            <img data-u="image" src="public/topPics/IMG_0037.JPG" />
+            <img data-u="thumb" src="public/topPics/IMG_0037.JPG" />
+        </div>
+        <div>
+            <img data-u="image" src="public/topPics/IMG_0010.JPG" />
+            <img data-u="thumb" src="public/topPics/IMG_0010.JPG" />
+        </div>
+        </div>
+        <!-- Thumbnail Navigator -->
+        <div data-u="thumbnavigator" class="jssort101" style="position:absolute;left:0px;bottom:0px;width:980px;height:100px;background-color:#000;" data-autocenter="1" data-scale-bottom="0.75">
+            <div data-u="slides">
+                <div data-u="prototype" class="p" style="width:190px;height:90px;">
+                    <div data-u="thumbnailtemplate" class="t"></div>
+                    <svg viewbox="0 0 16000 16000" class="cv">
+                        <circle class="a" cx="8000" cy="8000" r="3238.1"></circle>
+                        <line class="a" x1="6190.5" y1="8000" x2="9809.5" y2="8000"></line>
+                        <line class="a" x1="8000" y1="9809.5" x2="8000" y2="6190.5"></line>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora106" style="width:55px;height:55px;top:290px;left:30px;" data-scale="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
+                <polyline class="a" points="7930.4,5495.7 5426.1,8000 7930.4,10504.3 "></polyline>
+                <line class="a" x1="10573.9" y1="8000" x2="5426.1" y2="8000"></line>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora106" style="width:55px;height:55px;top:290px;right:30px;" data-scale="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
+                <polyline class="a" points="8069.6,5495.7 10573.9,8000 8069.6,10504.3 "></polyline>
+                <line class="a" x1="5426.1" y1="8000" x2="10573.9" y2="8000"></line>
+            </svg>
+        </div>
+      </div>
+      <script type="text/javascript">jssor_1_slider_init();</script>
+      <!-- #endregion Jssor Slider End -->
+    </div>
+
+
+                    <!--REFERRALS PAGE  -->
     <div class="referrals">
       <div class="redBack">
         <h1 id="refTitle">GET REWARDED FOR REFERRALS!</h1>
@@ -242,7 +493,8 @@
         <div class="numbers">
           <img class="icon" src="./public/phoneIcon.png" alt="phone icon">
           <p>(718)523-9446</p>
-          <img id="faxLogo" src="./public/Fax_logo.png" alt="fax">          <p>(718)297-3657</p>
+          <img class="icon" src="./public/Fax_logo.png" alt="fax">
+          <p>(718)297-3657</p>
           <img class="icon" id="mail" src="./public/mailIcon.png" alt="mail icon">
           <p>nycwreckamended@gmail.com</p>
         </div>
@@ -304,17 +556,16 @@
       <img class="credit" src="./public/creditCards.png">
     </footer>
   </body>
-
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <script src="app.js" charset="utf-8"></script>
+  <script src="./app.js" charset="utf-8"></script>
   <script src="./public/aos/dist/aos.js"></script>
   <script>AOS.init();</script>
   <script src="contact_me.js"></script>
-  <!-- <script type="text/javascript">
+  <script type="text/javascript">
     function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+      new google.translate.TranslateElement({pageLanguage: 'es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
     }
     </script> 
-  <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+  <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </html>
