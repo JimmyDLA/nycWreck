@@ -1,5 +1,5 @@
 html{
-  font-family: 'Nunito', sans-serif;
+  font-family: 'PT Sans', sans-serif;
 }
 
 body{
@@ -24,6 +24,7 @@ header{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  font-family: 'Martel', serif;
   /*background-color: rgb(55, 55, 55);*/
   /*background: linear-gradient(to bottom left, black, rgb(100,100,100)); /* Standard syntax */
 }
@@ -170,6 +171,8 @@ li{
   align-items: flex-start;
   width: 500px;
   height: 250px;
+  margin-top: -30px;
+  
 }
 .list{
   width: 400px;
@@ -177,10 +180,33 @@ li{
   justify-content: flex-start;
   cursor: auto;
   padding-left: 20px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+#item1{
+  padding-left: 20px;
+  
+}
+#item2{
+  padding-left: 30px;
+  
+}
+#item3{
+  padding-left: 40px;
+  
+}
+#item4{
+  padding-left: 50px;
+  
+}
+#item5{
+  padding-left: 60px;
+  
 }
 
 #listText{
-  margin-left: 10px
+  margin-left: 10px;
+  font-size: 20px;
 }
 
 .phoneNums{
@@ -261,9 +287,10 @@ transform: scale(1.1);
 }
 
 .mapIt{
-  color: white;
+  color: rgb(180, 0 ,0);
   font-size: 35px;
 }
+
 .slideBackground{
   width: 100%;
   height: 500px;
@@ -275,8 +302,9 @@ transform: scale(1.1);
   background-image: linear-gradient(rgb(41,41,41), rgb(237,237,237));
 }
 .mapIt:hover{
-  color: rgb(180, 0, 0);
-};
+  color: white;
+  transform: scale(1.1);
+}
 
 * {box-sizing:border-box}
 
@@ -358,11 +386,15 @@ transform: scale(1.1);
   position: absolute;
   z-index:9;
   cursor: ew-resize;
-  /*set the appearance of the slider:*/
+  font-size: 50px;
   width: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 40px;
-  background-color: #2196F3;
-  opacity: 0.7;
+  background-color: rgb(180, 0 ,0);
+  /* opacity: 0.7; */
   border-radius: 50%;
 }
 
@@ -507,7 +539,7 @@ transform: scale(1.1);
 
 .row1right{
   height: 300px;
-  width: 600px;
+  width: 750px;
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
@@ -626,6 +658,7 @@ transform: scale(1.1);
   background-color: rgb(160, 0, 0);
   color: rgba(237, 237, 237, 1);
   box-shadow: 0px 16px 25px -2px rgba(0,0,0,0.42);
+  cursor: pointer;
 }
 
 #carIcon{
@@ -642,6 +675,7 @@ transform: scale(1.1);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
 
 }
 
@@ -667,7 +701,7 @@ transform: scale(1.1);
   border-radius: 20px;
   display: flex;
   flex-direction: row;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 #star{
@@ -790,7 +824,7 @@ p{
 }
 
 #yelp{
-  color: rgb(38, 123, 225);
+  color: rgb(230, 0, 0);
   font-size: 20px;
 
 }
@@ -945,6 +979,8 @@ textarea{
   height: 30px;
   width: 30px;
   margin-left: 20px;
+  font-size: 30px;
+  color: rgb(234, 201, 79);
 }
 
 .credit{
@@ -984,7 +1020,7 @@ footer{
 
 #footerImg{
   height: 100px;
-  width: 70%;
+  width: 70vw;
 }
 
 #footerImgContainer{
@@ -1033,7 +1069,9 @@ footer{
 /* SMALLER MONITOR SCREENS OR TABLET*/
 @media only screen and (max-width: 1071px) and (min-width: 861px) {
 
-
+  .title{
+    font-size: 26px;
+  }
   #namenum{
     font-size: 20px;
   }
@@ -1049,11 +1087,18 @@ footer{
     font-size: 15px;
   }
 }
+header{
+  height: 70px;
+}
 
-/*SMALLER TABLER OR MOBILE PHONE*/
+/*SMALLER TABLET OR MOBILE PHONE*/
 @media only screen and (max-width: 860px) and (min-width: 300px) {
   header{
     height: 100px;
+  }
+
+  .title{
+    font-size: 22px;
   }
 
   .logo{

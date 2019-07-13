@@ -22,6 +22,11 @@
 })(this, function(){
 'use strict';
 
+console.log(document.body.scrollTop)
+window.addEventListener("scroll", function () {
+  console.log(pageYOffset)
+});
+
 // Do not initialize smoothScroll when running server side, handle it in client:
 if (typeof window !== 'object') return;
 
@@ -151,7 +156,7 @@ return smoothScroll;
 
             //SCROLL FUNCTIONS
 function scrollAbout(){
-  smoothScroll(731);
+  smoothScroll(2006);
   x.classList.toggle("change");
   document.querySelector(".ul").style.display = "none";
   document.querySelector(".containerInfo").style.marginTop = "100px"
@@ -159,7 +164,7 @@ function scrollAbout(){
 }
 
 function scrollServ(){
-  smoothScroll(1831);
+  smoothScroll(1110);
   x.classList.toggle("change");
   document.querySelector(".ul").style.display = "none";
   document.querySelector(".containerInfo").style.marginTop = "100px"
@@ -167,7 +172,7 @@ function scrollServ(){
 }
 
 function scrollRef(){
-  smoothScroll(2631);
+  smoothScroll(4211);
   x.classList.toggle("change");
   document.querySelector(".ul").style.display = "none";
   document.querySelector(".containerInfo").style.marginTop = "100px"
@@ -175,7 +180,7 @@ function scrollRef(){
 }
 
 function scrollCont(){
-  smoothScroll(3421);
+  smoothScroll(5060);
   x.classList.toggle("change");
   document.querySelector(".ul").style.display = "none";
   document.querySelector(".containerInfo").style.marginTop = "100px"
@@ -183,7 +188,7 @@ function scrollCont(){
 }
 
 function scrollMap(){
-  smoothScroll(3700)
+  smoothScroll(5340)
 }
 function scrollTops(){
   smoothScroll(1);
@@ -215,42 +220,44 @@ window.onscroll = function() {
 var startCount = 0;
 
 function on(x) {
+
+  setTimeout(() => {})
   document.getElementById("overlay").style.display = "flex";
   let image1 = document.getElementById("img1-comp");
   let image2 = document.getElementById("img2-comp");
 
   switch(x.innerText){
     case 'Faded/Chipped Paint':
-      image1.src = "./public/gearknob.jpg";
-      image2.src = "./public/workTech.jpg";
+      image1.src = "./public/a1.png";
+      image2.src = "./public/b1.png";
       break;
     case 'Dents':
-      image1.src = "./public/white_brick.jpg";
-      image2.src = "./public/refNetwork.jpg";
+      image1.src = "./public/a2.png";
+      image2.src = "./public/b2.png";
       break;
     case 'Frame Damage':
-      image1.src = "./public/objectiveImg.jpg";
-      image2.src = "./public/objectiveImg2.jpg";
+      image1.src = "./public/a3.png";
+      image2.src = "./public/b3.png";
       break;
     case 'Rust':
-      image1.src = "./public/objectiveImg3.jpg";
-      image2.src = "./public/refNetwork.jpg";
+      image1.src = "./public/a2.png";
+      image2.src = "./public/b2.png";
       break;
     case 'Scratches/Scuff Marks':
-      image1.src = "./public/white_brick.jpg";
-      image2.src = "./public/refNetwork.jpg";
+      image1.src = "./public/a5.png";
+      image2.src = "./public/b5.png";
       break;
     case 'Dip Paint':
-      image1.src = "./public/white_brick.jpg";
-      image2.src = "./public/refNetwork.jpg";
+      image1.src = "./public/a6.png";
+      image2.src = "./public/b6.png";
       break;
     case 'Bumper/Body Damage':
-      image1.src = "./public/white_brick.jpg";
-      image2.src = "./public/refNetwork.jpg";
+      image1.src = "./public/a1.png";
+      image2.src = "./public/b1.png";
       break;
     case 'Dings/Holes':
-      image1.src = "./public/white_brick.jpg";
-      image2.src = "./public/refNetwork.jpg";
+      image1.src = "./public/a4.png";
+      image2.src = "./public/b4.png";
       break;
     default:
       // image1.src = "./public/white_brick.jpg";
@@ -264,6 +271,8 @@ function on(x) {
 }
 
 function off(x) {
+  document.querySelector(".img-comp-slider").style.left = "355px";
+  document.querySelector(".img-comp-overlay").style.width = "375px";
   document.getElementById("overlay").style.display = "none";
 }
 
