@@ -1,0 +1,11 @@
+---
+development:
+  task: 
+    - export DEPLOYPATH=/home/user/public_html/
+    - /bin/cp index.html
+    - /bin/cp index.css
+    - /bin/cp app.js
+    - /bin/cp contact_me.js
+    - /bin/cp /js
+    - /bin/cp /mail
+    - /bin/cp /public
