@@ -219,56 +219,55 @@ window.onscroll = function() {
 
 var startCount = 0;
 
-function on(x) {
+// function on(x) {
 
-  setTimeout(() => {})
-  document.getElementById("overlay").style.display = "flex";
-  let image1 = document.getElementById("img1-comp");
-  let image2 = document.getElementById("img2-comp");
+//   document.getElementById("overlay").style.display = "flex";
+//   let image1 = document.getElementById("img1-comp");
+//   let image2 = document.getElementById("img2-comp");
 
-  switch(x.innerText){
-    case 'Faded/Chipped Paint':
-      image1.src = "./public/a1.png";
-      image2.src = "./public/b1.png";
-      break;
-    case 'Dents':
-      image1.src = "./public/a2.png";
-      image2.src = "./public/b2.png";
-      break;
-    case 'Frame Damage':
-      image1.src = "./public/a3.png";
-      image2.src = "./public/b3.png";
-      break;
-    case 'Rust':
-      image1.src = "./public/a2.png";
-      image2.src = "./public/b2.png";
-      break;
-    case 'Scratches/Scuff Marks':
-      image1.src = "./public/a5.png";
-      image2.src = "./public/b5.png";
-      break;
-    case 'Dip Paint':
-      image1.src = "./public/a6.png";
-      image2.src = "./public/b6.png";
-      break;
-    case 'Bumper/Body Damage':
-      image1.src = "./public/a1.png";
-      image2.src = "./public/b1.png";
-      break;
-    case 'Dings/Holes':
-      image1.src = "./public/a4.png";
-      image2.src = "./public/b4.png";
-      break;
-    default:
-      // image1.src = "./public/white_brick.jpg";
-      // image2.src = "./public/refNetwork.jpg";
-      break;
-  }
-  if (startCount === 0 ){
-    startCount = 1;
-    initComparisons();
-  }
-}
+//   switch(x.innerText){
+//     case 'Faded/Chipped Paint':
+//       image1.src = "./public/a1.png";
+//       image2.src = "./public/b1.png";
+//       break;
+//     case 'Dents':
+//       image1.src = "./public/a2.png";
+//       image2.src = "./public/b2.png";
+//       break;
+//     case 'Frame Damage':
+//       image1.src = "./public/a3.png";
+//       image2.src = "./public/b3.png";
+//       break;
+//     case 'Rust':
+//       image1.src = "./public/a2.png";
+//       image2.src = "./public/b2.png";
+//       break;
+//     case 'Scratches/Scuff Marks':
+//       image1.src = "./public/a5.png";
+//       image2.src = "./public/b5.png";
+//       break;
+//     case 'Dip Paint':
+//       image1.src = "./public/a6.png";
+//       image2.src = "./public/b6.png";
+//       break;
+//     case 'Bumper/Body Damage':
+//       image1.src = "./public/a1.png";
+//       image2.src = "./public/b1.png";
+//       break;
+//     case 'Dings/Holes':
+//       image1.src = "./public/a4.png";
+//       image2.src = "./public/b4.png";
+//       break;
+//     default:
+//       // image1.src = "./public/white_brick.jpg";
+//       // image2.src = "./public/refNetwork.jpg";
+//       break;
+//   }
+//   if (startCount === 0 ){
+//     startCount = 1;
+//     initComparisons();
+//   }
+// }
 
 function off(x) {
   document.querySelector(".img-comp-slider").style.left = "355px";
