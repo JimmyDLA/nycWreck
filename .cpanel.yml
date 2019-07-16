@@ -2,10 +2,4 @@
 development:
   task: 
     - export DEPLOYPATH=/home/user/public_html/
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp index.css $DEPLOYPATH
-    - /bin/cp app.js $DEPLOYPATH
-    - /bin/cp contact_me.js $DEPLOYPATH
-    - /bin/cp /js $DEPLOYPATH
-    - /bin/cp /mail $DEPLOYPATH
-    - /bin/cp /public $DEPLOYPATH
+    - /bin/cp * $DEPLOYPATH
