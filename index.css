@@ -984,9 +984,27 @@ textarea{
 }
 
 .credit{
-  height: 100px;
+  height: 70px;
   width: 200px;
-  /* margin-right: 100px; */
+  margin-right: 20px;
+}
+.rights{
+  margin-left: 20px;
+}
+
+.iCarFoot{
+  height: 100px;
+  width: 140px;
+}
+
+.yelpFoot{
+  height: 100;
+  width: 125px;
+}
+
+.googleFoot{
+  height: 80px;
+  width: 180px;
 }
 
 /*Fading animation*/
